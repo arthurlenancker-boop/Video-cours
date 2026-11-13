@@ -29,7 +29,9 @@ Vidéo explicative résumant le chapitre d'histoire : *La Révolution française
 ## Notes techniques
 
 - Rendu Remotion (composition frame-deterministic).
-- Voix off générée avec **Voxtral TTS** (`voxtral-mini-tts-3-0`) : clonage zero-shot depuis un extrait du podcast de l'auteur, 115 segments synthétisés indépendamment (rythme `[pace=fast]`) puis concaténés.
+- Voix off générée avec **Voxtral TTS** (`voxtral-mini-tts-3-0`) : clonage zero-shot depuis un extrait du podcast de l'auteur. La narration est synthétisée **par blocs continus de scène** (prosodie naturelle), 115 phrases réparties dans 11 blocs.
+- **Navigation** : barre de progression des 11 chapitres en haut de chaque scène (chapitre courant en bleu, passés en encre).
+- **Illustrations** : une image générée par scène (style gravure de manuel scolaire, palette du projet), affichée à côté du mot-clé héros.
 - Le timing des sous-titres, des héros et des scènes est dérivé des **durées réelles** de la voix (`src/timing.json`, reconstruit automatiquement) : l'animation, la phrase et le sous-titre apparaissent au même moment.
 - Palette : papier `#F4EFE6` · encre `#1C1A17` · bleu `#21468B` · rouge `#A6231C` — à plat, sans dégradés ni ombres.
 - Typographie : Playfair Display (titres) + Inter (texte).
