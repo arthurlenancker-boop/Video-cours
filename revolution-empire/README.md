@@ -16,7 +16,7 @@ Vidéo explicative résumant le chapitre d'histoire : *La Révolution française
 
 | Temps | Scène | Contenu |
 |---|---|---|
-| 0-12 s | 1789, fin de l'Ancien Régime | Société d'ordres (clergé, noblesse, Tiers état), fail lite, la Nation s'empare de la souveraineté |
+| 0-12 s | 1789, fin de l'Ancien Régime | Société d'ordres (clergé, noblesse, Tiers état), faillite du royaume, la Nation s'empare de la souveraineté |
 | 12-28 s | 1791, monarchie constitutionnelle | 83 départements, biens du clergé nationalisés, Roi ⇄ Assemblée (veto), suffrage censitaire |
 | 28-41 s | 1792, la rupture | Frise : Varennes → guerre à l'Autriche → 10 août → Iʳᵉ République → exécution de Louis XVI |
 | 41-51 s | 1793-94, la Terreur | Loi des suspects, 17 000 exécutions, chute de Robespierre, Directoire |
