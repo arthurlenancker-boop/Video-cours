@@ -2,127 +2,127 @@
  "cues": [
   {
    "from": 0.55,
-   "to": 5.78,
+   "to": 6.17,
    "lines": [
     "Mille sept cent quatre-vingt-neuf.",
     "Le roi gouverne seul, la société est divisée en ordres."
    ]
   },
   {
-   "from": 6.23,
-   "to": 8.94,
+   "from": 6.62,
+   "to": 9.92,
    "lines": [
     "Le royaume est en faillite.",
     "Qui détient le pouvoir ?"
    ]
   },
   {
-   "from": 9.39,
-   "to": 12.07,
+   "from": 10.37,
+   "to": 13.11,
    "lines": [
     "C'est la Nation qui va s'emparer de la souveraineté."
    ]
   },
   {
-   "from": 12.52,
-   "to": 17.6,
+   "from": 13.56,
+   "to": 19.08,
    "lines": [
     "Tout change : les départements remplacent les provinces,",
     "les biens du clergé sont nationalisés."
    ]
   },
   {
-   "from": 18.05,
-   "to": 23.81,
+   "from": 19.53,
+   "to": 25.66,
    "lines": [
     "En 1791, une monarchie constitutionnelle.",
     "Pouvoirs séparés : le Roi et l'Assemblée."
    ]
   },
   {
-   "from": 24.26,
-   "to": 27.63,
+   "from": 26.11,
+   "to": 30.25,
    "lines": [
     "Mais suffrage censitaire :",
     "seuls les hommes qui paient le cens votent."
    ]
   },
   {
-   "from": 28.08,
-   "to": 31.99,
+   "from": 30.7,
+   "to": 34.6,
    "lines": [
     "Le roi fuit à Varennes, la guerre éclate en 1792."
    ]
   },
   {
-   "from": 32.44,
-   "to": 36.25,
+   "from": 35.05,
+   "to": 39.51,
    "lines": [
     "Le 10 août, le peuple prend les Tuileries.",
     "La République est proclamée."
    ]
   },
   {
-   "from": 36.7,
-   "to": 41.16,
+   "from": 39.96,
+   "to": 43.81,
    "lines": [
     "Louis XVI est guillotiné le 21 janvier 1793."
    ]
   },
   {
-   "from": 41.61,
-   "to": 44.83,
+   "from": 44.26,
+   "to": 47.74,
    "lines": [
     "Menacée de partout, la République bascule dans la Terreur."
    ]
   },
   {
-   "from": 45.28,
-   "to": 47.78,
+   "from": 48.19,
+   "to": 51.16,
    "lines": [
     "Loi des suspects : dix-sept mille exécutions."
    ]
   },
   {
-   "from": 48.23,
-   "to": 50.71,
+   "from": 51.61,
+   "to": 54.35,
    "lines": [
     "Robespierre tombe, le Directoire vacille."
    ]
   },
   {
-   "from": 51.16,
-   "to": 56.32,
+   "from": 54.8,
+   "to": 60.66,
    "lines": [
     "1799 : Bonaparte prend le pouvoir par le coup d'État du 18 Brumaire."
    ]
   },
   {
-   "from": 56.77,
-   "to": 60.14,
+   "from": 61.11,
+   "to": 64.82,
    "lines": [
     "Empereur en 1804, il bâtit ses masses de granit."
    ]
   },
   {
-   "from": 60.59,
-   "to": 66.43,
+   "from": 65.27,
+   "to": 71.63,
    "lines": [
     "Code civil, Concordat, lycées :",
     "les idéaux de 1789 s'exportent à travers l'Europe."
    ]
   },
   {
-   "from": 66.88,
-   "to": 71.47,
+   "from": 72.08,
+   "to": 76.96,
    "lines": [
     "Autoritaire, mais l'égalité devant la loi",
     "et la souveraineté de la Nation survivent."
    ]
   },
   {
-   "from": 71.92,
-   "to": 77.28,
+   "from": 77.41,
+   "to": 82.84,
    "lines": [
     "1789-1814 : une rupture majeure.",
     "La France moderne est née."
@@ -133,34 +133,34 @@
   {
    "id": "s1",
    "start": 0.0,
-   "dur": 12.52
+   "dur": 13.56
   },
   {
    "id": "s2",
-   "start": 12.52,
-   "dur": 15.56
+   "start": 13.56,
+   "dur": 17.14
   },
   {
    "id": "s3",
-   "start": 28.08,
-   "dur": 13.53
+   "start": 30.7,
+   "dur": 13.56
   },
   {
    "id": "s4",
-   "start": 41.61,
-   "dur": 9.55
+   "start": 44.26,
+   "dur": 10.54
   },
   {
    "id": "s5",
-   "start": 51.16,
-   "dur": 15.72
+   "start": 54.8,
+   "dur": 17.28
   },
   {
    "id": "s6",
-   "start": 66.88,
-   "dur": 11.65
+   "start": 72.08,
+   "dur": 12.01
   }
  ],
- "total": 78.53,
+ "total": 84.09,
  "fps": 30
 }
