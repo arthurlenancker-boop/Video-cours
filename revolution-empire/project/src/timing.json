@@ -1,166 +1,868 @@
 {
  "cues": [
   {
-   "from": 0.55,
-   "to": 6.17,
+   "from": 0.17,
+   "to": 5.47,
    "lines": [
-    "Mille sept cent quatre-vingt-neuf.",
-    "Le roi gouverne seul, la société est divisée en ordres."
+    "La Révolution française et l'Empire : une nouvelle conception de la nation."
    ]
   },
   {
-   "from": 6.62,
-   "to": 9.92,
+   "from": 5.64,
+   "to": 12.06,
    "lines": [
-    "Le royaume est en faillite.",
-    "Qui détient le pouvoir ?"
+    "Pourquoi la période de 1789 à 1814 est-elle considérée comme une rupture majeure ?"
    ]
   },
   {
-   "from": 10.37,
-   "to": 13.11,
+   "from": 12.23,
+   "to": 17.45,
    "lines": [
-    "C'est la Nation qui va s'emparer de la souveraineté."
+    "Et comment les représentants de la Nation ont-ils cherché à construire un régime politique stable ?"
    ]
   },
   {
-   "from": 13.56,
-   "to": 19.08,
+   "from": 17.62,
+   "to": 29.64,
    "lines": [
-    "Tout change : les départements remplacent les provinces,",
-    "les biens du clergé sont nationalisés."
+    "De 1789 à 1814, la France expérimente successivement la monarchie constitutionnelle, la République, le Directoire, puis l'Empire."
    ]
   },
   {
-   "from": 19.53,
-   "to": 25.66,
+   "from": 29.82,
+   "to": 33.51,
    "lines": [
-    "En 1791, une monarchie constitutionnelle.",
-    "Pouvoirs séparés : le Roi et l'Assemblée."
+    "Suivons cette recherche de la stabilité, pas à pas."
    ]
   },
   {
-   "from": 26.11,
-   "to": 30.25,
+   "from": 33.68,
+   "to": 39.62,
    "lines": [
-    "Mais suffrage censitaire :",
-    "seuls les hommes qui paient le cens votent."
+    "En 1789, le roi gouverne seul : c'est la monarchie absolue de droit divin."
    ]
   },
   {
-   "from": 30.7,
-   "to": 34.6,
+   "from": 39.79,
+   "to": 47.73,
    "lines": [
-    "Le roi fuit à Varennes, la guerre éclate en 1792."
+    "La société est divisée en ordres : le clergé, la noblesse, et le tiers état, qui porte tout le poids des impôts."
    ]
   },
   {
-   "from": 35.05,
-   "to": 39.51,
+   "from": 47.9,
+   "to": 51.44,
    "lines": [
-    "Le 10 août, le peuple prend les Tuileries.",
-    "La République est proclamée."
-   ]
-  },
-  {
-   "from": 39.96,
-   "to": 43.81,
-   "lines": [
-    "Louis XVI est guillotiné le 21 janvier 1793."
-   ]
-  },
-  {
-   "from": 44.26,
-   "to": 47.74,
-   "lines": [
-    "Menacée de partout, la République bascule dans la Terreur."
-   ]
-  },
-  {
-   "from": 48.19,
-   "to": 51.16,
-   "lines": [
-    "Loi des suspects : dix-sept mille exécutions."
+    "Le royaume est en faillite : les caisses de l'État sont vides."
    ]
   },
   {
    "from": 51.61,
-   "to": 54.35,
+   "to": 59.39,
    "lines": [
-    "Robespierre tombe, le Directoire vacille."
+    "Le peuple de Paris se soulève et prend la Bastille le 14 juillet 1789 : l'Ancien Régime s'effondre."
    ]
   },
   {
-   "from": 54.8,
-   "to": 60.66,
+   "from": 59.56,
+   "to": 63.1,
    "lines": [
-    "1799 : Bonaparte prend le pouvoir par le coup d'État du 18 Brumaire."
+    "Dans la nuit du 4 août, les privilèges sont abolis."
    ]
   },
   {
-   "from": 61.11,
-   "to": 64.82,
+   "from": 63.27,
+   "to": 68.01,
    "lines": [
-    "Empereur en 1804, il bâtit ses masses de granit."
+    "La Déclaration des droits de l'homme et du citoyen proclame l'égalité devant la loi."
    ]
   },
   {
-   "from": 65.27,
-   "to": 71.63,
+   "from": 68.19,
+   "to": 73.96,
    "lines": [
-    "Code civil, Concordat, lycées :",
-    "les idéaux de 1789 s'exportent à travers l'Europe."
+    "La souveraineté passe du roi à la Nation : c'est une rupture fondamentale."
    ]
   },
   {
-   "from": 72.08,
-   "to": 76.96,
+   "from": 74.14,
+   "to": 77.51,
    "lines": [
-    "Autoritaire, mais l'égalité devant la loi",
-    "et la souveraineté de la Nation survivent."
+    "Le pouvoir appartient désormais aux représentants de la Nation."
    ]
   },
   {
-   "from": 77.41,
-   "to": 82.84,
+   "from": 77.69,
+   "to": 80.18,
    "lines": [
-    "1789-1814 : une rupture majeure.",
-    "La France moderne est née."
+    "La France entreprend de profondes réformes."
+   ]
+  },
+  {
+   "from": 80.36,
+   "to": 85.41,
+   "lines": [
+    "Sur le plan administratif, quatre-vingt-quatre départements remplacent les provinces."
+   ]
+  },
+  {
+   "from": 85.59,
+   "to": 91.12,
+   "lines": [
+    "Sur le plan financier, les biens du clergé sont nationalisés pour rembourser les dettes de l'État."
+   ]
+  },
+  {
+   "from": 91.3,
+   "to": 97.31,
+   "lines": [
+    "Sur le plan religieux, la Constitution civile du clergé est adoptée en 1790."
+   ]
+  },
+  {
+   "from": 97.48,
+   "to": 102.62,
+   "lines": [
+    "Ce décret fait des évêques et des prêtres de véritables fonctionnaires, rémunérés par l'État."
+   ]
+  },
+  {
+   "from": 102.8,
+   "to": 108.01,
+   "lines": [
+    "En échange de ce salaire, ils doivent prêter serment à la Nation et à la Constitution."
+   ]
+  },
+  {
+   "from": 108.19,
+   "to": 111.72,
+   "lines": [
+    "Le pape condamne la réforme, et le clergé se divise."
+   ]
+  },
+  {
+   "from": 111.89,
+   "to": 116.39,
+   "lines": [
+    "D'un côté, les prêtres jureurs, qui acceptent la Constitution."
+   ]
+  },
+  {
+   "from": 116.56,
+   "to": 120.66,
+   "lines": [
+    "De l'autre, les prêtres réfractaires, qui refusent le serment."
+   ]
+  },
+  {
+   "from": 120.83,
+   "to": 126.13,
+   "lines": [
+    "Cette division religieuse nourrit des tensions durables, jusqu'à la guerre civile en Vendée."
+   ]
+  },
+  {
+   "from": 126.3,
+   "to": 132.32,
+   "lines": [
+    "En 1791, une nouvelle Constitution met en place une monarchie constitutionnelle."
+   ]
+  },
+  {
+   "from": 132.5,
+   "to": 140.03,
+   "lines": [
+    "Le suffrage est censitaire : le droit de vote est réservé aux électeurs de plus de vingt-cinq ans qui paient un certain montant d'impôts."
+   ]
+  },
+  {
+   "from": 140.21,
+   "to": 143.82,
+   "lines": [
+    "Seuls ceux qui paient le cens détiennent donc la souveraineté nationale."
+   ]
+  },
+  {
+   "from": 144.0,
+   "to": 147.37,
+   "lines": [
+    "Les pouvoirs politiques sont séparés en trois instances distinctes."
+   ]
+  },
+  {
+   "from": 147.55,
+   "to": 150.68,
+   "lines": [
+    "Le Roi des Français détient le pouvoir exécutif."
+   ]
+  },
+  {
+   "from": 150.86,
+   "to": 157.35,
+   "lines": [
+    "L'Assemblée législative propose, discute et vote les lois : c'est le pouvoir législatif."
+   ]
+  },
+  {
+   "from": 157.53,
+   "to": 162.1,
+   "lines": [
+    "Mais le Roi conserve un droit de veto : il peut empêcher qu'une loi soit votée."
+   ]
+  },
+  {
+   "from": 162.28,
+   "to": 167.25,
+   "lines": [
+    "Ce régime repose sur un texte constitutionnel qui sépare le Roi et le parlement."
+   ]
+  },
+  {
+   "from": 167.43,
+   "to": 169.76,
+   "lines": [
+    "Mais la Nation et son roi se brouillent."
+   ]
+  },
+  {
+   "from": 169.94,
+   "to": 178.51,
+   "lines": [
+    "Dans la nuit du 21 juin 1791, le roi et sa famille fuient Paris, et sont arrêtés à Varennes."
+   ]
+  },
+  {
+   "from": 178.69,
+   "to": 183.1,
+   "lines": [
+    "L'Assemblée tente de protéger la monarchie, mais le roi est discrédité."
+   ]
+  },
+  {
+   "from": 183.28,
+   "to": 192.25,
+   "lines": [
+    "Le 17 juillet 1791, la garde nationale tire sur la manifestation du Champ de Mars : les divisions politiques s'accentuent."
+   ]
+  },
+  {
+   "from": 192.43,
+   "to": 201.56,
+   "lines": [
+    "Le 20 avril 1792, la France déclare la guerre à l'Autriche : c'est le début d'une guerre qui dure jusqu'en 1815."
+   ]
+  },
+  {
+   "from": 201.74,
+   "to": 207.03,
+   "lines": [
+    "L'hostilité vis-à-vis du roi grandit : on le soupçonne de soutenir l'ennemi."
+   ]
+  },
+  {
+   "from": 207.21,
+   "to": 215.46,
+   "lines": [
+    "Le 25 juillet 1792, le duc de Brunswick menace de détruire Paris si les Français ne se soumettent pas au roi."
+   ]
+  },
+  {
+   "from": 215.64,
+   "to": 221.33,
+   "lines": [
+    "Le 10 août 1792, les sans-culottes prennent d'assaut le palais des Tuileries."
+   ]
+  },
+  {
+   "from": 221.51,
+   "to": 226.32,
+   "lines": [
+    "Le roi et sa famille sont emprisonnés : la monarchie constitutionnelle est finie."
+   ]
+  },
+  {
+   "from": 226.5,
+   "to": 232.03,
+   "lines": [
+    "Le 22 septembre 1792, la Convention proclame la Première République."
+   ]
+  },
+  {
+   "from": 232.21,
+   "to": 234.46,
+   "lines": [
+    "Mais la République naissante est divisée."
+   ]
+  },
+  {
+   "from": 234.64,
+   "to": 240.97,
+   "lines": [
+    "Les Girondins, députés modérés souvent originaires de la Gironde, se méfient du peuple et des insurrections."
+   ]
+  },
+  {
+   "from": 241.15,
+   "to": 248.68,
+   "lines": [
+    "Les Montagnards, comme Danton et Robespierre, défendent une révolution sociale, soutenus par les sans-culottes."
+   ]
+  },
+  {
+   "from": 248.86,
+   "to": 251.19,
+   "lines": [
+    "La Convention s'apprête à juger le roi."
+   ]
+  },
+  {
+   "from": 251.37,
+   "to": 256.26,
+   "lines": [
+    "Certains députés estiment qu'il ne peut pas être jugé, car les lois de l'époque le protègent."
+   ]
+  },
+  {
+   "from": 256.44,
+   "to": 259.73,
+   "lines": [
+    "D'autres l'estiment traître à la Nation et réclament sa mort."
+   ]
+  },
+  {
+   "from": 259.91,
+   "to": 264.08,
+   "lines": [
+    "Plus les décisions sont radicales, plus les votes sont serrés."
+   ]
+  },
+  {
+   "from": 264.26,
+   "to": 269.55,
+   "lines": [
+    "Après un procès, la Convention vote la mort du roi à une courte majorité."
+   ]
+  },
+  {
+   "from": 269.73,
+   "to": 274.86,
+   "lines": [
+    "Le 21 janvier 1793, Louis XVI est guillotiné."
+   ]
+  },
+  {
+   "from": 275.04,
+   "to": 283.37,
+   "lines": [
+    "Parmi les femmes engagées, Manon Roland, salonnière et plume des Girondins, est guillotinée en novembre 1793."
+   ]
+  },
+  {
+   "from": 283.55,
+   "to": 287.88,
+   "lines": [
+    "Les femmes participent à la Révolution, mais restent privées de droits politiques."
+   ]
+  },
+  {
+   "from": 288.06,
+   "to": 293.59,
+   "lines": [
+    "La mort du roi entraîne la formation d'une coalition européenne contre la France."
+   ]
+  },
+  {
+   "from": 293.77,
+   "to": 300.66,
+   "lines": [
+    "À l'intérieur, la guerre civile s'installe : en Vendée, royalistes et prêtres réfractaires se soulèvent."
+   ]
+  },
+  {
+   "from": 300.84,
+   "to": 307.33,
+   "lines": [
+    "Les Girondins, jugés trop modérés, sont arrêtés en juin 1793 puis guillotinés."
+   ]
+  },
+  {
+   "from": 307.51,
+   "to": 314.24,
+   "lines": [
+    "Les Montagnards prennent le pouvoir : le Comité de salut public, dirigé par Robespierre, gouverne la France."
+   ]
+  },
+  {
+   "from": 314.42,
+   "to": 319.39,
+   "lines": [
+    "C'est le début de la Terreur, une expérience politique fondée sur la peur."
+   ]
+  },
+  {
+   "from": 319.57,
+   "to": 326.38,
+   "lines": [
+    "Les prix sont contrôlés, le grain réquisitionné, et la levée en masse rend le service militaire obligatoire."
+   ]
+  },
+  {
+   "from": 326.56,
+   "to": 334.57,
+   "lines": [
+    "La loi des suspects, votée le 17 septembre 1793, permet d'arrêter tous les ennemés présumés de la Révolution."
+   ]
+  },
+  {
+   "from": 334.75,
+   "to": 340.76,
+   "lines": [
+    "Royalistes, émigrés, girondins : les arrestations et les exécutions se multiplient."
+   ]
+  },
+  {
+   "from": 340.94,
+   "to": 344.07,
+   "lines": [
+    "Dix-sept mille personnes sont exécutées après procès."
+   ]
+  },
+  {
+   "from": 344.25,
+   "to": 349.94,
+   "lines": [
+    "Sans compter les exécutions sommaires, ni la répression en Vendée, qui fait plus de cent mille morts."
+   ]
+  },
+  {
+   "from": 350.12,
+   "to": 355.89,
+   "lines": [
+    "Le 16 octobre 1793, la reine Marie-Antoinette est exécutée à son tour."
+   ]
+  },
+  {
+   "from": 356.07,
+   "to": 360.4,
+   "lines": [
+    "Mais les révoltes sont écrasées, et l'invasion est stoppée aux frontières."
+   ]
+  },
+  {
+   "from": 360.58,
+   "to": 364.75,
+   "lines": [
+    "Robespierre, isolé, est de plus en plus désigné comme un dictateur."
+   ]
+  },
+  {
+   "from": 364.93,
+   "to": 372.7,
+   "lines": [
+    "Le 28 juillet 1794, il est arrêté puis guillotiné avec ses proches collaborateurs."
+   ]
+  },
+  {
+   "from": 372.88,
+   "to": 379.69,
+   "lines": [
+    "La première République a débouché sur une dictature au bilan humain très lourd, et la Nation reste divisée."
+   ]
+  },
+  {
+   "from": 379.87,
+   "to": 383.88,
+   "lines": [
+    "Après ce traumatisme, les républicains modérés reprennent le pouvoir."
+   ]
+  },
+  {
+   "from": 384.06,
+   "to": 389.27,
+   "lines": [
+    "En 1795, une nouvelle constitution met en place le Directoire."
+   ]
+  },
+  {
+   "from": 389.45,
+   "to": 394.34,
+   "lines": [
+    "Le suffrage redevient censitaire : le pouvoir du peuple est limité."
+   ]
+  },
+  {
+   "from": 394.52,
+   "to": 400.45,
+   "lines": [
+    "Le pouvoir exécutif est confié à cinq directeurs, pour éviter tout risque de dictature personnelle."
+   ]
+  },
+  {
+   "from": 400.63,
+   "to": 406.72,
+   "lines": [
+    "Le régime favorise les élites et la bourgeoisie, tandis que les catégories populaires connaissent la misère."
+   ]
+  },
+  {
+   "from": 406.9,
+   "to": 411.95,
+   "lines": [
+    "Les tensions rendent le régime instable : il ne tient que par le soutien de l'armée."
+   ]
+  },
+  {
+   "from": 412.13,
+   "to": 417.58,
+   "lines": [
+    "Dans l'armée, le général Napoléon Bonaparte gagne en popularité grâce à ses victoires."
+   ]
+  },
+  {
+   "from": 417.76,
+   "to": 422.09,
+   "lines": [
+    "Jugé dangereux, il est éloigné et envoyé en mission en Égypte."
+   ]
+  },
+  {
+   "from": 422.27,
+   "to": 428.28,
+   "lines": [
+    "Pour une partie des dirigeants, la stabilité exige un changement de régime, y compris par la force."
+   ]
+  },
+  {
+   "from": 428.46,
+   "to": 437.75,
+   "lines": [
+    "Le 9 novembre 1799, le 18 Brumaire, Napoléon Bonaparte prend le pouvoir par un coup d'État, avec le soutien de l'armée."
+   ]
+  },
+  {
+   "from": 437.93,
+   "to": 442.74,
+   "lines": [
+    "Sa popularité et la lassitude des Français expliquent le peu d'opposition."
+   ]
+  },
+  {
+   "from": 442.92,
+   "to": 445.49,
+   "lines": [
+    "Napoléon affirme que la Révolution est finie."
+   ]
+  },
+  {
+   "from": 445.67,
+   "to": 451.92,
+   "lines": [
+    "Le Consulat, dirigé par trois consuls, assure la transition de la République vers l'Empire."
+   ]
+  },
+  {
+   "from": 452.1,
+   "to": 456.99,
+   "lines": [
+    "Premier consul à vie dès 1802, Napoléon détient l'essentiel des pouvoirs."
+   ]
+  },
+  {
+   "from": 457.17,
+   "to": 463.18,
+   "lines": [
+    "Le suffrage universel devient censitaire, et les plébiscites donnent un semblant de démocratie."
+   ]
+  },
+  {
+   "from": 463.36,
+   "to": 472.73,
+   "lines": [
+    "Le 2 décembre 1804, Napoléon est sacré empereur à Notre-Dame de Paris, sous les attributs romains : lauriers et manteau de pourpre."
+   ]
+  },
+  {
+   "from": 472.91,
+   "to": 477.48,
+   "lines": [
+    "Par la propagande, il se fait représenter avec les regalia du pouvoir."
+   ]
+  },
+  {
+   "from": 477.66,
+   "to": 483.27,
+   "lines": [
+    "Il se comporte comme un roi : il reconstitue une noblesse d'Empire, sans privilèges."
+   ]
+  },
+  {
+   "from": 483.45,
+   "to": 485.46,
+   "lines": [
+    "Les assemblées perdent tout pouvoir."
+   ]
+  },
+  {
+   "from": 485.64,
+   "to": 493.41,
+   "lines": [
+    "Le régime est autoritaire : arrestation des opposants, censure de la presse, contrôle de la population par la police."
+   ]
+  },
+  {
+   "from": 493.59,
+   "to": 498.8,
+   "lines": [
+    "Les libertés sont limitées, mais Napoléon consolide les acquis de la Révolution."
+   ]
+  },
+  {
+   "from": 498.98,
+   "to": 504.99,
+   "lines": [
+    "Il dote la France de ses masses de granit : des institutions solides, destinées à durer."
+   ]
+  },
+  {
+   "from": 505.17,
+   "to": 513.5,
+   "lines": [
+    "La Banque de France en 1800, le Concordat en 1801, les lycées et la Légion d'honneur en 1802."
+   ]
+  },
+  {
+   "from": 513.68,
+   "to": 518.57,
+   "lines": [
+    "Le franc germinal en 1803, et surtout le Code civil en 1804."
+   ]
+  },
+  {
+   "from": 518.75,
+   "to": 523.16,
+   "lines": [
+    "Le Code civil uniformise les lois pour un pays désormais unifié."
+   ]
+  },
+  {
+   "from": 523.34,
+   "to": 527.11,
+   "lines": [
+    "Il proclame l'égalité des citoyens devant la loi et les impôts."
+   ]
+  },
+  {
+   "from": 527.29,
+   "to": 534.42,
+   "lines": [
+    "Mais le cadre reste très conservateur : la femme mariée est traitée comme une mineure, placée sous l'autorité de son époux."
+   ]
+  },
+  {
+   "from": 534.6,
+   "to": 540.77,
+   "lines": [
+    "Et en 1802, Napoléon rétablit l'esclavage, qui avait été aboli en 1794."
+   ]
+  },
+  {
+   "from": 540.95,
+   "to": 549.44,
+   "lines": [
+    "Le Concordat de 1801 réconcilie la France avec le pape : le clergé prête serment de fidélité à l'État, qui le rémunère."
+   ]
+  },
+  {
+   "from": 549.62,
+   "to": 552.83,
+   "lines": [
+    "À partir de 1805, la guerre reprend."
+   ]
+  },
+  {
+   "from": 553.01,
+   "to": 558.14,
+   "lines": [
+    "Grâce à la conscription, la Grande Armée enrôle chaque année les jeunes hommes du même âge."
+   ]
+  },
+  {
+   "from": 558.32,
+   "to": 564.33,
+   "lines": [
+    "Des victoires comme Ulm et Austerlitz donnent à Napoléon la domination d'une grande partie de l'Europe."
+   ]
+  },
+  {
+   "from": 564.51,
+   "to": 572.28,
+   "lines": [
+    "En 1811, le Grand Empire compte cent trente départements, de Hambourg à Rome : c'est l'apogée."
+   ]
+  },
+  {
+   "from": 572.46,
+   "to": 577.67,
+   "lines": [
+    "L'armée atteint sept cent mille soldats en 1812, français et étrangers."
+   ]
+  },
+  {
+   "from": 577.85,
+   "to": 583.86,
+   "lines": [
+    "L'Empire s'étend de l'Espagne à la Russie, entouré d'États vassaux dirigés par les membres de sa famille."
+   ]
+  },
+  {
+   "from": 584.04,
+   "to": 591.41,
+   "lines": [
+    "Pour vaincre l'Angleterre, Napoléon impose le blocus continental : tout produit britannique est interdit sur le continent."
+   ]
+  },
+  {
+   "from": 591.59,
+   "to": 600.0,
+   "lines": [
+    "Dans les régions annexées, les principes révolutionnaires sont exportés : suppression des privilèges, Code civil, départements."
+   ]
+  },
+  {
+   "from": 600.18,
+   "to": 605.71,
+   "lines": [
+    "Mais l'occupation suscite des contestations et des révoltes nationalistes."
+   ]
+  },
+  {
+   "from": 605.89,
+   "to": 609.98,
+   "lines": [
+    "La campagne de Russie, en 1812, est un désastre."
+   ]
+  },
+  {
+   "from": 610.16,
+   "to": 617.29,
+   "lines": [
+    "En 1814, la coalition envahit la France : Napoléon abdique et est exilé à l'île d'Elbe."
+   ]
+  },
+  {
+   "from": 617.47,
+   "to": 624.52,
+   "lines": [
+    "Après les Cent Jours et la défaite de Waterloo en 1815, Louis XVIII restaure la monarchie."
+   ]
+  },
+  {
+   "from": 624.7,
+   "to": 630.79,
+   "lines": [
+    "L'Empire s'effondre, mais les idéaux de 1789 ont été semés dans toute l'Europe."
+   ]
+  },
+  {
+   "from": 630.97,
+   "to": 637.38,
+   "lines": [
+    "Alors, pourquoi 1789 à 1814 est-il une rupture majeure ?"
+   ]
+  },
+  {
+   "from": 637.56,
+   "to": 643.41,
+   "lines": [
+    "Parce que la souveraineté a changé de main : elle appartient désormais à la Nation, et non plus au roi."
+   ]
+  },
+  {
+   "from": 643.59,
+   "to": 649.12,
+   "lines": [
+    "Parce que l'égalité devant la loi, inscrite dans le Code civil, survit à tous les régimes."
+   ]
+  },
+  {
+   "from": 649.3,
+   "to": 657.07,
+   "lines": [
+    "De la monarchie constitutionnelle à l'Empire, aucune expérience n'a été stable : la France a cherché son régime politique."
+   ]
+  },
+  {
+   "from": 657.25,
+   "to": 662.38,
+   "lines": [
+    "Mais de cette recherche naissent l'administration, le droit et l'école modernes."
+   ]
+  },
+  {
+   "from": 662.56,
+   "to": 668.33,
+   "lines": [
+    "1789-1814 : la France moderne est née."
    ]
   }
  ],
  "scenes": [
   {
+   "id": "s0",
+   "start": 0.17,
+   "dur": 33.51
+  },
+  {
    "id": "s1",
-   "start": 0.0,
-   "dur": 13.56
+   "start": 33.68,
+   "dur": 44.01
   },
   {
    "id": "s2",
-   "start": 13.56,
-   "dur": 17.14
+   "start": 77.69,
+   "dur": 48.61
   },
   {
    "id": "s3",
-   "start": 30.7,
-   "dur": 13.56
+   "start": 126.3,
+   "dur": 41.13
   },
   {
    "id": "s4",
-   "start": 44.26,
-   "dur": 10.54
+   "start": 167.43,
+   "dur": 64.78
   },
   {
    "id": "s5",
-   "start": 54.8,
-   "dur": 17.28
+   "start": 232.21,
+   "dur": 55.85
   },
   {
    "id": "s6",
-   "start": 72.08,
-   "dur": 12.01
+   "start": 288.06,
+   "dur": 91.81
+  },
+  {
+   "id": "s7",
+   "start": 379.87,
+   "dur": 48.59
+  },
+  {
+   "id": "s8",
+   "start": 428.46,
+   "dur": 121.16
+  },
+  {
+   "id": "s9",
+   "start": 549.62,
+   "dur": 81.35
+  },
+  {
+   "id": "s10",
+   "start": 630.97,
+   "dur": 37.71
   }
  ],
- "total": 84.09,
+ "total": 668.68,
  "fps": 30
 }
