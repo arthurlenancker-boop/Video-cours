@@ -8,7 +8,8 @@ Vidéo explicative résumant le chapitre d'histoire : *La Révolution française
 
 | Fichier | Description |
 |---|---|
-| `v2-style-papier-voix-off.mp4` | **Version recommandée** — style éditorial papier, voix off française (Kokoro, voix ff_siwis), sous-titres synchronisés. 78,5 s · 1920×1080 · 30 fps |
+| `v3-voix-elevenlabs.mp4` | **Version recommandée** — style éditorial papier, voix off ElevenLabs (George, modèle `eleven_multilingual_v2`), sous-titres synchronisés. 84,1 s · 1920×1080 · 30 fps |
+| `v2-style-papier-voix-off.mp4` | Voix off locale Kokoro (`ff_siwis`). 78,5 s · 1920×1080 · 30 fps |
 | `v1-style-sombre.mp4` | Première version — fond sombre, sous-titres seuls (sans voix off). 80 s · 1920×1080 |
 
 ## Structure de la vidéo
@@ -22,9 +23,9 @@ Vidéo explicative résumant le chapitre d'histoire : *La Révolution française
 | 51-66 s | 1799-1814, l'Empire | 18 Brumaire, sacre 1804, masses de granit (Banque de France 1800, Concordat 1801, lycées 1802, Code civil 1804), export des idéaux de 1789 |
 | 66-78 s | Bilan | 1789-1814 : une rupture majeure — la France moderne est née |
 
-## Notes techniques (v2)
+## Notes techniques (v3)
 
-- Rendu Remotion (composition frame-deterministic), voix off générée en local avec Kokoro-ONNX (voix française `ff_siwis`, 24 kHz).
+- Rendu Remotion (composition frame-deterministic), voix off générée avec ElevenLabs (voix `George`, modèle `eleven_multilingual_v2`, sortie MP3 44,1 kHz convertie en WAV mono).
 - Le timing des sous-titres et des scènes est dérivé des **durées réelles** de la voix : légendes, coupes et narration ne peuvent pas dériver.
 - Palette : papier `#F4EFE6` · encre `#1C1A17` · bleu `#21468B` · rouge `#A6231C` — à plat, sans dégradés ni ombres.
 - Typographie : Playfair Display (titres) + Inter (texte).
