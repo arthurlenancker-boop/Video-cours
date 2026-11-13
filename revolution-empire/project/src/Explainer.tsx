@@ -22,7 +22,7 @@ const C = {
   ink: "#1C1A17",
   blue: "#21468B",
   red: "#A6231C",
-  faint: "#8C857A",
+  faint: "#6E6659",
   rule: "#D8D1C2",
 };
 const SERIF = '"Playfair Display", Georgia, serif';
@@ -43,15 +43,15 @@ const fade = (local: number, delay: number, dur = 16) =>
 const rise = (local: number, delay: number, px = 24, dur = 16) =>
   interpolate(p(local, delay, dur), [0, 1], [px, 0], {
     easing: EASE,
-    extrapolateRight: "clamp",
+    extrapolate: "clamp",
   });
 
 const Kicker: React.FC<{ local: number; text: string }> = ({ local, text }) => (
   <div style={{
     position: "absolute", top: 96, left: 128,
-    fontFamily: SANS, fontSize: 26, fontWeight: 600,
-    letterSpacing: 5, color: C.faint, textTransform: "uppercase",
-    opacity: fade(local, 0), transform: `translateY(${rise(local, 0, 12)}px)`,
+    fontFamily: SANS, fontSize: 28, fontWeight: 600,
+    letterSpacing: 4, color: C.faint, textTransform: "uppercase",
+    opacity: fade(local, 0), translate: `0px ${rise(local, 0, 12)}px`,
   }}>{text}</div>
 );
 
@@ -59,7 +59,7 @@ const Rule: React.FC<{ local: number; top: number; delay: number }> = ({ local, 
   <div style={{
     position: "absolute", top, left: 128, right: 128, height: 2, background: C.ink,
     transformOrigin: "left center",
-    transform: `scaleX(${interpolate(p(local, delay, 30), [0, 1], [0, 1], { extrapolateRight: "clamp" })})`,
+    scaleX: interpolate(p(local, delay, 30), [0, 1], [0, 1], { extrapolateRight: "clamp" }),
     opacity: fade(local, delay),
   }} />
 );
@@ -87,14 +87,14 @@ const Scene1: React.FC<{ local: number }> = ({ local }) => {
         position: "absolute", top: 170, left: 128,
         fontFamily: SERIF, fontSize: 240, fontWeight: 700, color: C.ink,
         letterSpacing: -8, lineHeight: 1,
-        opacity: fade(local, 5), transform: `translateY(${rise(local, 5, 40)}px)`,
+        opacity: fade(local, 5), translate: `0px ${rise(local, 5, 40)}px`,
       }}>1789</div>
       <div style={{ position: "absolute", top: 470, left: 128, display: "flex", flexDirection: "column", gap: 20 }}>
         {orders.map((o, i) => (
           <div key={o.label} style={{
             display: "flex", alignItems: "center", gap: 28,
             opacity: fade(local, 30 + i * 20),
-            transform: `translateX(${rise(local, 30 + i * 20, 40)}px)`,
+            translate: `${rise(local, 30 + i * 20, 40)}px 0px`,
           }}>
             <div style={{ width: o.w, height: 56, background: o.c }} />
             <span style={{ fontFamily: SANS, fontSize: 32, fontWeight: 600, color: C.ink }}>{o.label}</span>
@@ -105,13 +105,14 @@ const Scene1: React.FC<{ local: number }> = ({ local }) => {
         position: "absolute", top: 200, right: 140,
         fontFamily: SANS, fontSize: 92, fontWeight: 800, color: C.red,
         border: `5px solid ${C.red}`, padding: "10px 30px", letterSpacing: 8,
+        rotate: "-10deg",
         opacity: fade(local, 110),
-        transform: `rotate(-10deg) scale(${interpolate(p(local, 110, 20), [0, 1], [1.5, 1], { easing: EASE, extrapolateRight: "clamp" })})`,
+        scale: interpolate(p(local, 110, 20), [0, 1], [1.5, 1], { easing: EASE, extrapolateRight: "clamp" }),
       }}>FAILLITE</div>
       <div style={{
         position: "absolute", bottom: 250, left: 128, right: 128,
         fontFamily: SERIF, fontSize: 56, fontWeight: 600, color: C.ink,
-        opacity: fade(local, 200), transform: `translateY(${rise(local, 200, 30)}px)`,
+        opacity: fade(local, 200), translate: `0px ${rise(local, 200, 30)}px`,
       }}>
         La <span style={{ color: C.blue }}>Nation</span> s'empare de la souveraineté
       </div>
@@ -126,17 +127,17 @@ const Scene2: React.FC<{ local: number }> = ({ local }) => {
     <div>
       <Kicker local={local} text={LABELS.s2} />
       <div style={{ position: "absolute", top: 190, left: 128 }}>
-        <div style={{ fontFamily: SANS, fontSize: 30, color: C.faint, marginBottom: 24, opacity: fade(local, 0) }}>
+        <div style={{ fontFamily: SANS, fontSize: 34, fontWeight: 600, color: C.ink, marginBottom: 28, opacity: fade(local, 0) }}>
           83 départements · biens du clergé nationalisés
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(12, 30px)", gap: 10 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(12, 36px)", gap: 12 }}>
           {cells.map((i) => {
             const d = 15 + (i % 12) * 1.5 + Math.floor(i / 12) * 4;
             return (
               <div key={i} style={{
-                width: 20, height: 20, background: C.blue,
+                width: 24, height: 24, background: C.blue,
                 opacity: fade(local, d, 5),
-                transform: `scale(${interpolate(p(local, d, 7), [0, 1], [0.2, 1], { extrapolateRight: "clamp" })})`,
+                scale: interpolate(p(local, d, 7), [0, 1], [0.2, 1], { extrapolateRight: "clamp" }),
               }} />
             );
           })}
@@ -145,7 +146,7 @@ const Scene2: React.FC<{ local: number }> = ({ local }) => {
       <div style={{
         position: "absolute", top: 540, left: 128, right: 128,
         display: "flex", alignItems: "flex-end", justifyContent: "center", gap: 96,
-        opacity: fade(local, 150), transform: `translateY(${rise(local, 150, 40)}px)`,
+        opacity: fade(local, 150), translate: `0px ${rise(local, 150, 40)}px`,
       }}>
         <div style={{ textAlign: "center" }}>
           <div style={{ fontFamily: SERIF, fontSize: 76, color: C.ink, lineHeight: 1 }}>Roi</div>
@@ -160,7 +161,7 @@ const Scene2: React.FC<{ local: number }> = ({ local }) => {
       <div style={{
         position: "absolute", bottom: 230, left: 0, right: 0, textAlign: "center",
         fontFamily: SERIF, fontSize: 46, fontWeight: 600, color: C.red,
-        opacity: fade(local, 290), transform: `translateY(${rise(local, 290, 30)}px)`,
+        opacity: fade(local, 290), translate: `0px ${rise(local, 290, 30)}px`,
       }}>Suffrage censitaire masculin — la souveraineté est limitée</div>
     </div>
   );
@@ -171,7 +172,7 @@ const Scene3: React.FC<{ local: number }> = ({ local }) => {
     { d: "Juin 1791", t: "Varennes", c: C.ink },
     { d: "Avril 1792", t: "Guerre à l'Autriche", c: C.red },
     { d: "10 août 1792", t: "Prise des Tuileries", c: C.red },
-    { d: "22 sept. 1792", t: "Iʳᵉ République", c: C.blue },
+    { d: "22 sept. 1792", t: "Iᵌᵉ République", c: C.blue },
     { d: "21 janv. 1793", t: "Exécution de Louis XVI", c: C.red },
   ];
   return (
@@ -182,7 +183,7 @@ const Scene3: React.FC<{ local: number }> = ({ local }) => {
         {events.map((e, i) => {
           const d = 30 + i * 55;
           return (
-            <div key={e.t} style={{ flex: 1, opacity: fade(local, d), transform: `translateY(${rise(local, d, 36)}px)` }}>
+            <div key={e.t} style={{ flex: 1, opacity: fade(local, d), translate: `0px ${rise(local, d, 36)}px` }}>
               <div style={{ width: 22, height: 22, borderRadius: 11, background: e.c, margin: "74px 0 28px 0" }} />
               <div style={{ fontFamily: SANS, fontSize: 27, color: C.faint, marginBottom: 10, letterSpacing: 1 }}>{e.d}</div>
               <div style={{ fontFamily: SERIF, fontSize: 34, fontWeight: 600, color: C.ink, lineHeight: 1.25 }}>{e.t}</div>
@@ -193,7 +194,8 @@ const Scene3: React.FC<{ local: number }> = ({ local }) => {
       <div style={{
         position: "absolute", bottom: 240, left: 0, right: 0, textAlign: "center",
         fontFamily: SERIF, fontSize: 64, fontWeight: 700, color: C.ink,
-        opacity: fade(local, 320), transform: `scale(${interpolate(p(local, 320, 20), [0, 1], [0.85, 1], { easing: EASE, extrapolateRight: "clamp" })})`,
+        opacity: fade(local, 320),
+        scale: interpolate(p(local, 320, 20), [0, 1], [0.85, 1], { easing: EASE, extrapolateRight: "clamp" }),
       }}>
         La monarchie est <span style={{ color: C.red }}>finie</span>
       </div>
@@ -211,21 +213,22 @@ const Scene4: React.FC<{ local: number }> = ({ local }) => {
       <div style={{
         position: "absolute", top: 200, left: 0, right: 0, textAlign: "center",
         fontFamily: SERIF, fontSize: 150, fontWeight: 700, color: C.red, letterSpacing: 14,
-        opacity: fade(local, 5), transform: `scale(${interpolate(p(local, 5, 22), [0, 1], [1.35, 1], { easing: EASE, extrapolateRight: "clamp" })})`,
+        opacity: fade(local, 5),
+        scale: interpolate(p(local, 5, 22), [0, 1], [1.35, 1], { easing: EASE, extrapolateRight: "clamp" }),
       }}>TERREUR</div>
       <div style={{
-        position: "absolute", top: 420, left: 0, right: 0, textAlign: "center",
-        fontFamily: SANS, fontSize: 30, color: C.faint, opacity: fade(local, 60),
+        position: "absolute", top: 380, left: 0, right: 0, textAlign: "center",
+        fontFamily: SANS, fontSize: 32, color: C.faint, opacity: fade(local, 60),
       }}>Loi des suspects · prix maximum · levée en masse</div>
       <div style={{
-        position: "absolute", top: 500, left: 0, right: 0, textAlign: "center",
+        position: "absolute", top: 480, left: 0, right: 0, textAlign: "center",
         fontFamily: SERIF, fontSize: 104, fontWeight: 700, color: C.ink,
         opacity: fade(local, 115),
       }}>{count} exécutions</div>
       <div style={{
-        position: "absolute", top: 650, left: 0, right: 0, textAlign: "center",
+        position: "absolute", top: 640, left: 0, right: 0, textAlign: "center",
         fontFamily: SANS, fontSize: 34, color: C.ink, opacity: fade(local, 230),
-        transform: `translateY(${rise(local, 230, 24)}px)`,
+        translate: `0px ${rise(local, 230, 24)}px`,
       }}>
         Robespierre exécuté en juillet 1794 — le <span style={{ color: C.blue, fontWeight: 700 }}>Directoire</span> vacille
       </div>
@@ -246,7 +249,7 @@ const Scene5: React.FC<{ local: number }> = ({ local }) => {
       <div style={{
         position: "absolute", top: 180, left: 128,
         fontFamily: SERIF, fontSize: 56, fontWeight: 700, color: C.ink,
-        opacity: fade(local, 0), transform: `translateY(${rise(local, 0, 36)}px)`,
+        opacity: fade(local, 0), translate: `0px ${rise(local, 0, 36)}px`,
       }}>
         18 Brumaire 1799 → <span style={{ color: C.blue }}>Empereur en 1804</span>
       </div>
@@ -258,7 +261,7 @@ const Scene5: React.FC<{ local: number }> = ({ local }) => {
               background: i === 3 ? C.red : C.blue, color: C.paper,
               fontFamily: SANS, fontWeight: 600, fontSize: 32,
               padding: "20px 32px",
-              opacity: fade(local, d), transform: `translateY(${rise(local, d, 40)}px)`,
+              opacity: fade(local, d), translate: `0px ${rise(local, d, 40)}px`,
             }}>
               <span style={{ opacity: 0.75, marginRight: 22 }}>{b.y}</span>{b.t}
             </div>
@@ -266,9 +269,9 @@ const Scene5: React.FC<{ local: number }> = ({ local }) => {
         })}
       </div>
       <div style={{
-        position: "absolute", top: 320, right: 128, width: 600,
+        position: "absolute", top: 300, right: 128, width: 600,
         fontFamily: SANS, fontSize: 33, color: C.ink, lineHeight: 1.55,
-        opacity: fade(local, 300), transform: `translateY(${rise(local, 300, 36)}px)`,
+        opacity: fade(local, 300), translate: `0px ${rise(local, 300, 36)}px`,
       }}>
         Régime <b style={{ color: C.red }}>autoritaire</b> : censure, police, noblesse d'Empire.
         <br />
@@ -281,7 +284,7 @@ const Scene5: React.FC<{ local: number }> = ({ local }) => {
 const Scene6: React.FC<{ local: number }> = ({ local }) => (
   <div style={{
     position: "absolute", inset: 0,
-    display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 36,
+    display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 44,
   }}>
     <div style={{ display: "flex", width: 840, height: 10 }}>
       <div style={{ flex: 1, background: C.blue }} />
@@ -290,19 +293,19 @@ const Scene6: React.FC<{ local: number }> = ({ local }) => (
     </div>
     <div style={{
       fontFamily: SERIF, fontSize: 100, fontWeight: 700, color: C.ink, textAlign: "center",
-      opacity: fade(local, 20), transform: `translateY(${rise(local, 20, 40)}px)`, lineHeight: 1.12,
+      opacity: fade(local, 20), translate: `0px ${rise(local, 20, 40)}px`, lineHeight: 1.12,
     }}>
       1789-1814<br />une <span style={{ color: C.red }}>rupture majeure</span>
     </div>
     <div style={{
       fontFamily: SANS, fontSize: 36, color: C.faint, textAlign: "center", maxWidth: 1200,
-      opacity: fade(local, 100), transform: `translateY(${rise(local, 100, 30)}px)`,
+      opacity: fade(local, 100), translate: `0px ${rise(local, 100, 30)}px`,
     }}>
       La souveraineté de la Nation et l'égalité devant la loi survivent à tous les régimes.
     </div>
     <div style={{
       fontFamily: SERIF, fontSize: 40, fontWeight: 700, color: C.blue, marginTop: 16,
-      opacity: fade(local, 170), transform: `translateY(${rise(local, 170, 30)}px)`,
+      opacity: fade(local, 170), translate: `0px ${rise(local, 170, 30)}px`,
     }}>
       La France moderne est née.
     </div>
@@ -322,11 +325,11 @@ const Captions: React.FC = () => {
     <div style={{
       position: "absolute", bottom: 88, left: 0, right: 0,
       display: "flex", justifyContent: "center",
-      opacity: Math.min(inP, outP), transform: `translateY(${(1 - inP) * 12}px)`,
+      opacity: Math.min(inP, outP), translate: `0px ${(1 - inP) * 12}px`,
     }}>
       <div style={{
-        background: C.ink, padding: "16px 34px",
-        fontFamily: SANS, fontSize: 38, fontWeight: 600, color: C.paper,
+        background: C.ink, padding: "14px 30px",
+        fontFamily: SANS, fontSize: 36, fontWeight: 600, color: C.paper,
         textAlign: "center", lineHeight: 1.35, maxWidth: 1400,
       }}>
         {cue.lines.map((l, i) => <div key={i}>{l}</div>)}
