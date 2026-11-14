@@ -8,7 +8,7 @@ Vidéo explicative résumant le chapitre d'histoire : *La Révolution française
 
 | Fichier | Description |
 |---|---|
-| `v4-approfondie-voix-clonee.mp4` | **Version finale** — approfondie (11 min 08), voix off clonée depuis le podcast de l'auteur via Voxtral TTS (`voxtral-mini-tts-3-0`, zero-shot cloning, rythme `[pace=fast]`), 115 segments « une idée = une animation = une phrase », sous-titres synchronisés. 1920×1080 · 30 fps |
+| `revolution-et-empire-1789-1814.mp4` | **Vidéo finale** — approfondie (11 min 10), voix off clonée depuis le podcast de l'auteur via Voxtral TTS (`voxtral-mini-tts-3-0`, zero-shot cloning, rythme `[pace=fast]`), 115 segments « une idée = une animation = une phrase », sous-titres synchronisés. 1920×1080 · 30 fps |
 
 ## Structure de la vidéo
 
