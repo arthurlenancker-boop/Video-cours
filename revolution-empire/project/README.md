@@ -4,7 +4,7 @@ Source de `../v3-voix-elevenlabs.mp4` (et des versions précédentes). Permet de
 
 ## Structure
 
-- `src/Explainer.tsx` — la composition (6 scènes, sous-titres, voix off)
+- `src/Explainer.tsx` — la composition (11 scènes / 13 chapitres < 90 s dérivés de `timing.json`, image fixe par scène, fondu croisé des idées, sous-titres discrets, voix off)
 - `src/timing.json` — **source de vérité unique** : timings des sous-titres, bornes des scènes, durée totale. La durée de la composition (`src/Root.tsx`) en est dérivée.
 - `public/narration.wav` — la voix off assemblée (44,1 kHz)
 - `tts/` — génération de la voix off (ElevenLabs `eleven.py` pour la v3, ou Kokoro-ONNX `synth.py` en local) et calcul du timing
