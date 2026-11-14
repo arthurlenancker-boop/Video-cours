@@ -1,0 +1,70 @@
+[
+ {"id": 0, "scene": "s0", "text": "La Révolution française et l'Empire : une nouvelle conception de la nation."},
+ {"id": 1, "scene": "s0", "text": "Pourquoi la période de dix-sept cent quatre-vingt-neuf à dix-huit cent quatorze est-elle considérée comme une rupture majeure ?"},
+ {"id": 2, "scene": "s0", "text": "Et comment les représentants de la Nation ont-ils cherché à construire un régime politique stable ?"},
+ {"id": 3, "scene": "s0", "text": "En vingt-cinq ans, la France expérimente quatre régimes : la monarchie constitutionnelle, la République, le Directoire, puis l'Empire."},
+
+ {"id": 4, "scene": "s1", "text": "En dix-sept cent quatre-vingt-neuf, le royaume est en faillite et la société d'ordres est ébranlée par les idées des Lumières."},
+ {"id": 5, "scene": "s1", "text": "Le tiers état se proclame Assemblée nationale : les représentants de la Nation réclament le pouvoir."},
+ {"id": 6, "scene": "s1", "text": "Le quatorze juillet, la prise de la Bastille symbolise la fin de la monarchie absolue."},
+ {"id": 7, "scene": "s1", "text": "Dans la nuit du quatre août, les privilèges sont abolis."},
+ {"id": 8, "scene": "s1", "text": "La Déclaration des droits de l'homme et du citoyen proclame que la Nation est souveraine."},
+ {"id": 9, "scene": "s1", "text": "C'est la fin de l'Ancien Régime : le pouvoir appartient désormais aux représentants de la Nation."},
+
+ {"id": 10, "scene": "s2", "text": "La France entreprend alors de grandes réformes."},
+ {"id": 11, "scene": "s2", "text": "Sur le plan administratif, quatre-vingt-quatre départements remplacent les anciennes provinces."},
+ {"id": 12, "scene": "s2", "text": "Sur le plan financier, les biens du clergé sont nationalisés pour rembourser les dettes de l'État."},
+ {"id": 13, "scene": "s2", "text": "La Constitution civile du clergé transforme les évêques et les prêtres en fonctionnaires, rémunérés par l'État."},
+ {"id": 14, "scene": "s2", "text": "Ils doivent prêter serment à la Constitution : le clergé se divise entre jureurs et réfractaires, et le pape condamne la réforme."},
+
+ {"id": 15, "scene": "s3", "text": "En dix-sept cent quatre-vingt-onze, la Constitution met en place une monarchie constitutionnelle."},
+ {"id": 16, "scene": "s3", "text": "Le suffrage est censitaire et masculin : seuls votent les hommes de plus de vingt-cinq ans payant suffisamment d'impôts."},
+ {"id": 17, "scene": "s3", "text": "Les pouvoirs sont séparés : le roi, roi des Français, détient le pouvoir exécutif, et l'Assemblée législative vote les lois."},
+ {"id": 18, "scene": "s3", "text": "Le roi conserve un droit de veto : il peut empêcher qu'une loi soit votée."},
+ {"id": 19, "scene": "s3", "text": "Seule une minorité du peuple détient donc la souveraineté nationale."},
+
+ {"id": 20, "scene": "s4", "text": "Le vingt et un juin dix-sept cent quatre-vingt-onze, la fuite du roi s'arrête à Varennes : Louis seize est arrêté et discrédité."},
+ {"id": 21, "scene": "s4", "text": "Le dix-sept juillet, la garde nationale tire sur la manifestation du Champ de Mars : la confiance entre la Nation et son roi est brisée."},
+ {"id": 22, "scene": "s4", "text": "Le vingt avril dix-sept cent quatre-vingt-douze, la France déclare la guerre à l'Autriche : c'est le début de vingt-trois ans de conflits."},
+ {"id": 23, "scene": "s4", "text": "Le duc de Brunswick menace de détruire Paris si les Parisiens ne se soumettent pas au roi."},
+ {"id": 24, "scene": "s4", "text": "Le dix août, les sans-culottes prennent le palais des Tuileries : la monarchie est renversée."},
+ {"id": 25, "scene": "s4", "text": "Le vingt-deux septembre, la Convention proclame la Première République."},
+
+ {"id": 26, "scene": "s5", "text": "La Convention, élue au suffrage universel masculin, est divisée en deux groupes."},
+ {"id": 27, "scene": "s5", "text": "Les Girondins, modérés, se méfient du peuple et des insurrections populaires."},
+ {"id": 28, "scene": "s5", "text": "Les Montagnards, soutenus par les sans-culottes, défendent une révolution sociale."},
+ {"id": 29, "scene": "s5", "text": "Après un procès, Louis seize est guillotiné le vingt et un janvier dix-sept cent quatre-vingt-treize, à une courte majorité."},
+ {"id": 30, "scene": "s5", "text": "Des femmes comme Manon Roland s'engagent en politique, mais elles restent exclues du pouvoir."},
+
+ {"id": 31, "scene": "s6", "text": "La mort du roi déclenche une coalition européenne à l'extérieur, et une guerre civile à l'intérieur, notamment en Vendée."},
+ {"id": 32, "scene": "s6", "text": "Face au danger, le Comité de salut public, dominé par Robespierre, concentre le pouvoir."},
+ {"id": 33, "scene": "s6", "text": "Les prix sont contrôlés, les réquisitions de grain organisées, et la levée en masse rend le service militaire obligatoire."},
+ {"id": 34, "scene": "s6", "text": "La loi des suspects, votée en septembre, entraîne des arrestations massives."},
+ {"id": 35, "scene": "s6", "text": "Dix-sept mille personnes sont exécutées après procès, et la répression en Vendée fait plus de cent mille morts."},
+ {"id": 36, "scene": "s6", "text": "Isolé, désigné comme un dictateur, Robespierre est renversé et exécuté en juillet dix-sept cent quatre-vingt-quatorze."},
+
+ {"id": 37, "scene": "s7", "text": "En dix-sept cent quatre-vingt-quinze, une nouvelle constitution met en place le Directoire."},
+ {"id": 38, "scene": "s7", "text": "Le suffrage redevient censitaire et le pouvoir exécutif est confié à cinq directeurs, pour éviter toute dictature personnelle."},
+ {"id": 39, "scene": "s7", "text": "Le régime favorise les élites et la bourgeoisie, tandis que les catégories populaires connaissent la misère : les tensions s'accentuent."},
+ {"id": 40, "scene": "s7", "text": "Instable, ce régime ne se maintient que grâce au soutien de l'armée."},
+ {"id": 41, "scene": "s7", "text": "Le neuf novembre dix-sept cent quatre-vingt-dix-neuf, le général Napoléon Bonaparte prend le pouvoir par un coup d'État : c'est le dix-huit Brumaire."},
+
+ {"id": 42, "scene": "s8", "text": "Bonaparte devient premier consul, puis se fait sacrer empereur à Notre-Dame de Paris, le deux décembre mille huit cent quatre."},
+ {"id": 43, "scene": "s8", "text": "Il se comporte comme un roi : noblesse d'Empire, assemblées sans pouvoir, censure de la presse et opposants arrêtés."},
+ {"id": 44, "scene": "s8", "text": "Pour asseoir son régime, il bâtit des masses de granit : Banque de France, lycées, Légion d'honneur, franc germinal."},
+ {"id": 45, "scene": "s8", "text": "Le Code civil de mille huit cent quatre établit des règles communes et proclame l'égalité des citoyens devant la loi."},
+ {"id": 46, "scene": "s8", "text": "Mais les femmes sont placées sous la tutelle de leur mari, et l'esclavage, aboli en dix-sept cent quatre-vingt-quatorze, est rétabli."},
+ {"id": 47, "scene": "s8", "text": "Le Concordat de mille huit cent un réconcilie la France avec le pape : le clergé prête serment de fidélité à l'État, qui le rémunère."},
+ {"id": 48, "scene": "s8", "text": "Des plébiscites, sorte de référendums, donnent un semblant de démocratie à ce régime autoritaire."},
+
+ {"id": 49, "scene": "s9", "text": "Grâce à la conscription, la Grande Armée compte jusqu'à sept cent mille soldats, français et étrangers."},
+ {"id": 50, "scene": "s9", "text": "Des victoires comme Ulm et Austerlitz permettent à Napoléon de dominer une grande partie de l'Europe."},
+ {"id": 51, "scene": "s9", "text": "En mille huit cent onze, le Grand Empire compte cent trente départements, de Hambourg à Rome, entouré d'états vassaux."},
+ {"id": 52, "scene": "s9", "text": "Napoléon exporte les principes de dix-sept cent quatre-vingt-neuf : suppression des privilèges, égalité devant la loi, Code civil."},
+ {"id": 53, "scene": "s9", "text": "Mais l'occupation suscite des contestations, et le blocus continental contre l'Angleterre échoue."},
+
+ {"id": 54, "scene": "s10", "text": "De dix-sept cent quatre-vingt-neuf à dix-huit cent quatorze, la Nation devient souveraine et les citoyens égaux devant la loi."},
+ {"id": 55, "scene": "s10", "text": "Mais la France a traversé quatre régimes instables, de la Terreur à l'Empire autoritaire."},
+ {"id": 56, "scene": "s10", "text": "Politiquement, la Révolution a échoué ; socialement, elle a tout transformé."},
+ {"id": 57, "scene": "s10", "text": "C'est la naissance de la France moderne."}
+]
