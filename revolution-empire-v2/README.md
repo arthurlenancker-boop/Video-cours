@@ -35,6 +35,10 @@ Seconde vidéo explicative du chapitre d'histoire : *La Révolution française e
 - **Répétition espacée** : fil des mots-clés précédents en bas d'écran (renforcement mnésique), récapitulatif au bilan.
 - **Sobriété sensorielle** : palette plate apaisée (papier/encre), animations lentes et douces, aucun flash ni mouvement rapide.
 - **Visuels de données** : société d'ordres (barres), vote de la mort du roi, compteurs animés (17 000 exécutions, 700 000 soldats, 130 départements), fiche Manon Roland, masses de granit.
+- **Variation rythmique** : hiérarchie visuelle en trois niveaux pour éviter la monotonie du métronome « une idée = une animation » —
+  - **5 moments épiques** en bandeau plein cadre inversé (Iʳᵉ République, exécution de Louis XVI, 17 000 exécutions, sacre de 1804, la France moderne) ;
+  - **9 idées-pivots** encadrées (Varennes, 18 Brumaire, masses de granit…) ;
+  - **filigrane géant de l'année** propre à chaque chapitre (signature visuelle, repère d'orientation).
 
 ## Notes techniques
 

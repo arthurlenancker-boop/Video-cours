@@ -229,12 +229,64 @@ const ChapterNav: React.FC<{ sceneIdx: number; local: number; sceneDur: number }
   );
 };
 
+// ---------- Chapter ghost year (visual signature per chapter) ----------
+const GhostYear: React.FC<{ local: number; year?: string }> = ({ local, year }) => {
+  if (!year) return null;
+  return (
+    <div style={{
+      position: "absolute", top: 400, left: 0, right: 0,
+      display: "flex", justifyContent: "center",
+      opacity: interpolate(local, [0.4, 1.4], [0, 0.16], { extrapolateRight: "clamp" }),
+      fontFamily: SERIF, fontSize: 520, fontWeight: 700, color: C.ink,
+      letterSpacing: 12, userSelect: "none",
+    }}>{year}</div>
+  );
+};
+
 // ---------- Hero (one idea = one animation) ----------
 const Hero: React.FC<{ cueIdx: number; local: number; cueFrom: number }> = ({ cueIdx, local, cueFrom }) => {
   const idea = IDEAS[cueIdx] ?? { k: "" };
   const p = clamp01((local - cueFrom) / 1.1);
   const color = colorOf(idea.c);
   const visual = idea.v;
+  const weight = idea.w;
+
+  if (weight === "epic") {
+    const fade = clamp01((local - cueFrom) / 1.6);
+    return (
+      <div style={{
+        position: "absolute", top: 330, left: 0, right: 0, bottom: 220,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        flexDirection: "column", gap: 34,
+        background: color,
+        scaleY: interpolate(fade, [0, 1], [0.6, 1], { easing: EASE }),
+        opacity: fade,
+      }}>
+        {visual === "counter" && (
+          <div style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "center" }}>
+            <div style={{ fontFamily: SERIF, fontSize: 120, fontWeight: 700, color: C.paper, letterSpacing: 4 }}>
+              {Math.round(interpolate(clamp01((local - cueFrom) / 2.2), [0.15, 0.85], [0, 17000], {
+                easing: Easing.out(Easing.cubic), extrapolateRight: "clamp",
+              })).toLocaleString("fr-FR")}
+            </div>
+            <div style={{ fontFamily: SANS, fontSize: 36, fontWeight: 600, color: C.paper }}>exécutions après procès</div>
+          </div>
+        )}
+        {visual !== "counter" && (
+          <div style={{
+            fontFamily: SERIF, fontWeight: 700, color: C.paper, lineHeight: 1.05, textAlign: "center",
+            fontSize: idea.k.length > 22 ? 96 : idea.k.length > 14 ? 118 : 140,
+          }}>{idea.k}</div>
+        )}
+        {idea.s && (
+          <div style={{ fontFamily: SANS, fontSize: 36, color: C.paper, lineHeight: 1.4, maxWidth: 1150, textAlign: "center", opacity: interpolate(fade, [0.4, 1], [0, 0.95], { extrapolateRight: "clamp" }) }}>
+            {idea.s}
+          </div>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div style={{
       position: "absolute", top: 330, left: 128, right: 128,
@@ -263,6 +315,13 @@ const Hero: React.FC<{ cueIdx: number; local: number; cueFrom: number }> = ({ cu
         <div style={{ fontFamily: SANS, fontSize: 34, color: C.faint, lineHeight: 1.4, maxWidth: 1150, textAlign: "center" }}>
           {idea.s}
         </div>
+      )}
+      {weight === "key" && (
+        <div style={{
+          position: "absolute", top: -34, bottom: -34, left: -44, right: -44,
+          border: `4px solid ${C.rule}`, pointerEvents: "none",
+          opacity: interpolate(p, [0.2, 0.7], [0, 1], { extrapolateRight: "clamp" }),
+        }} />
       )}
     </div>
   );
@@ -339,6 +398,7 @@ export const Explainer: React.FC<z.infer<typeof explainerSchema>> = ({ captionsO
       <Audio src={staticFile("narration.wav")} />
       {!captionsOnly && (
         <>
+          <GhostYear local={local} year={title.year} />
           <Kicker local={local} text={title.kicker} />
           <SceneTitle local={local} text={title.title} />
           <ChapterNav sceneIdx={sceneIdx} local={local} sceneDur={scene.dur} />
@@ -351,16 +411,16 @@ export const Explainer: React.FC<z.infer<typeof explainerSchema>> = ({ captionsO
   );
 };
 
-const SCENE_TITLES: Record<string, { kicker: string; title: string }> = {
+const SCENE_TITLES: Record<string, { kicker: string; title: string; year?: string }> = {
   s0: { kicker: "Introduction", title: "Une nouvelle conception de la nation" },
-  s1: { kicker: "1789 — La fin de l'Ancien Régime", title: "La Nation affirme sa souveraineté" },
-  s2: { kicker: "1790 — Les réformes", title: "Réorganiser la France" },
-  s3: { kicker: "1791 — La Constitution", title: "Une monarchie constitutionnelle" },
-  s4: { kicker: "1791-1792 — Vers la rupture", title: "La Nation et son roi se brouillent" },
-  s5: { kicker: "1792-1793 — La Convention", title: "Une République divisée" },
-  s6: { kicker: "1793-1794 — La Terreur", title: "La République de la peur" },
-  s7: { kicker: "1795-1799 — Le Directoire", title: "Une république conservatrice" },
-  s8: { kicker: "1799-1804 — Consulat et Empire", title: "Napoléon Bonaparte" },
-  s9: { kicker: "1805-1811 — Le Grand Empire", title: "L'Europe conquise et transformée" },
-  s10: { kicker: "Bilan", title: "1789-1814, une rupture majeure" },
+  s1: { kicker: "1789 — La fin de l'Ancien Régime", title: "La Nation affirme sa souveraineté" , year: "1789" },
+  s2: { kicker: "1790 — Les réformes", title: "Réorganiser la France" , year: "1790" },
+  s3: { kicker: "1791 — La Constitution", title: "Une monarchie constitutionnelle" , year: "1791" },
+  s4: { kicker: "1791-1792 — Vers la rupture", title: "La Nation et son roi se brouillent" , year: "1792" },
+  s5: { kicker: "1792-1793 — La Convention", title: "Une République divisée" , year: "1793" },
+  s6: { kicker: "1793-1794 — La Terreur", title: "La République de la peur" , year: "1793" },
+  s7: { kicker: "1795-1799 — Le Directoire", title: "Une république conservatrice" , year: "1795" },
+  s8: { kicker: "1799-1804 — Consulat et Empire", title: "Napoléon Bonaparte" , year: "1804" },
+  s9: { kicker: "1805-1811 — Le Grand Empire", title: "L'Europe conquise et transformée" , year: "1811" },
+  s10: { kicker: "Bilan", title: "1789-1814, une rupture majeure" , year: "1814" },
 };
