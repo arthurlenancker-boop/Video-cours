@@ -80,13 +80,73 @@ const Regimes: React.FC<{ p: number }> = ({ p }) => {
   );
 };
 
-const Counter17k: React.FC<{ p: number }> = ({ p }) => {
-  const n = Math.round(interpolate(p, [0.15, 0.85], [0, 17000], {
+const Orders: React.FC<{ p: number }> = ({ p }) => {
+  const orders = [
+    { label: "Clergé", w: 180 },
+    { label: "Noblesse", w: 240 },
+    { label: "Tiers état", w: 760 },
+  ];
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+      {orders.map((o, i) => (
+        <div key={o.label} style={{
+          display: "flex", alignItems: "center", gap: 22,
+          opacity: interpolate(p, [0.1 + i * 0.15, 0.35 + i * 0.15], [0, 1], { extrapolateRight: "clamp" }),
+          translate: `${interpolate(p, [0.1 + i * 0.15, 0.35 + i * 0.15], [-40, 0], { easing: EASE, extrapolateRight: "clamp" })}px 0px`,
+        }}>
+          <div style={{ width: o.w * interpolate(p, [0.1 + i * 0.15, 0.45 + i * 0.15], [0, 1], { extrapolateRight: "clamp" }), height: 42, background: i === 2 ? C.blue : C.ink }} />
+          <span style={{ fontFamily: SANS, fontSize: 28, fontWeight: 600, color: C.ink }}>{o.label}</span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const BigCounter: React.FC<{ p: number; to: number; label: string }> = ({ p, to, label }) => {
+  const n = Math.round(interpolate(p, [0.15, 0.85], [0, to], {
     easing: Easing.out(Easing.cubic), extrapolateRight: "clamp",
   })).toLocaleString("fr-FR");
   return (
-    <div style={{ fontFamily: SERIF, fontSize: 92, fontWeight: 700, color: C.red, letterSpacing: 4 }}>
-      {n} exécutions
+    <div style={{ display: "flex", flexDirection: "column", gap: 10, alignItems: "center" }}>
+      <div style={{ fontFamily: SERIF, fontSize: 96, fontWeight: 700, color: C.red, letterSpacing: 4 }}>{n}</div>
+      <div style={{ fontFamily: SANS, fontSize: 34, fontWeight: 600, color: C.ink }}>{label}</div>
+    </div>
+  );
+};
+
+const Vote: React.FC<{ p: number }> = ({ p }) => {
+  const pour = 0.62;
+  const w = interpolate(p, [0.15, 0.75], [0, 1], { easing: Easing.out(Easing.cubic), extrapolateRight: "clamp" });
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 14, width: 1100 }}>
+      <div style={{ display: "flex", height: 64, border: `4px solid ${C.ink}` }}>
+        <div style={{ width: `${pour * w * 100}%`, background: C.red }} />
+        <div style={{ width: `${(1 - pour) * w * 100}%`, background: C.paper }} />
+      </div>
+      <div style={{ display: "flex", justifyContent: "space-between", fontFamily: SANS, fontSize: 28, fontWeight: 600, color: C.ink }}>
+        <span style={{ color: C.red }}>La mort — courte majorité</span>
+        <span style={{ color: C.faint }}>Contre</span>
+      </div>
+    </div>
+  );
+};
+
+const Manon: React.FC<{ p: number }> = ({ p }) => {
+  const rows = [
+    "1754 — née Manon Philipon, éduquée par les Lumières",
+    "Salonnière des Girondins — Brissot, Robespierre",
+    "Plume : pensées politiques signées du couple",
+    "8 novembre 1793 — guillotinée",
+  ];
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 14, border: `4px solid ${C.ink}`, padding: "26px 34px", background: C.paper, maxWidth: 1200 }}>
+      {rows.map((r, i) => (
+        <div key={r} style={{
+          fontFamily: SANS, fontSize: 29, fontWeight: 600, color: i === 3 ? C.red : C.ink,
+          opacity: interpolate(p, [0.1 + i * 0.13, 0.35 + i * 0.13], [0, 1], { extrapolateRight: "clamp" }),
+          translate: `0px ${interpolate(p, [0.1 + i * 0.13, 0.35 + i * 0.13], [18, 0], { easing: EASE, extrapolateRight: "clamp" })}px`,
+        }}>{r}</div>
+      ))}
     </div>
   );
 };
@@ -184,11 +244,16 @@ const Hero: React.FC<{ cueIdx: number; local: number; cueFrom: number }> = ({ cu
       translate: `0px ${interpolate(p, [0, 0.6], [24, 0], { easing: EASE, extrapolateRight: "clamp" })}px`,
     }}>
       {visual === "regimes" && <Regimes p={p} />}
-      {visual === "counter" && <Counter17k p={p} />}
+      {visual === "orders" && <Orders p={p} />}
+      {visual === "counter" && <BigCounter p={p} to={17000} label="exécutions après procès" />}
+      {visual === "counter700" && <BigCounter p={p} to={700000} label="soldats en 1812" />}
+      {visual === "counter130" && <BigCounter p={p} to={130} label="départements en 1811" />}
+      {visual === "vote" && <Vote p={p} />}
+      {visual === "manon" && <Manon p={p} />}
       {visual === "granite0" && <GraniteBlocks p={p} row={0} />}
       {visual === "granite1" && <GraniteBlocks p={p} row={1} />}
       {visual === "tricolor" && <Tricolor p={p} />}
-      {visual !== "counter" && (
+      {visual !== "counter" && visual !== "counter700" && visual !== "counter130" && (
         <div style={{
           fontFamily: SERIF, fontWeight: 700, color, lineHeight: 1.05, textAlign: "center",
           fontSize: idea.k.length > 22 ? 74 : idea.k.length > 14 ? 90 : 108,
