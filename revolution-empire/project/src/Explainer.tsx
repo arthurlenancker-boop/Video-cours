@@ -171,50 +171,61 @@ const ChapterNav: React.FC<{ sceneIdx: number; local: number; sceneDur: number }
 };
 
 // ---------- Hero (one idea = one animation) ----------
-const Hero: React.FC<{ cueIdx: number; local: number; cueFrom: number; sceneId: string }> = ({ cueIdx, local, cueFrom, sceneId }) => {
+const SceneImage: React.FC<{ local: number; sceneId: string; imgFrom: number }> = ({ local, sceneId, imgFrom }) => (
+  <Img
+    src={staticFile(`img/${sceneId}.jpg`)}
+    style={{
+      width: 620, height: 349, objectFit: "cover",
+      border: `4px solid ${C.ink}`,
+      opacity: interpolate(local, [imgFrom, imgFrom + 0.6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
+      translate: `0px ${interpolate(local, [imgFrom, imgFrom + 0.6], [20, 0], { easing: EASE, extrapolateLeft: "clamp", extrapolateRight: "clamp" })}px`,
+    }}
+  />
+);
+
+const IdeaText: React.FC<{ cueIdx: number; local: number; cueFrom: number }> = ({ cueIdx, local, cueFrom }) => {
   const idea = IDEAS[cueIdx] ?? { k: "", s: "" };
-  const p = clamp01((local - (cueFrom - 0)) / 0.9);
+  const p = clamp01((local - cueFrom) / 0.4);
   const color = colorOf(idea.c);
   const visual = idea.v;
-  const hasImage = !visual;
+  return (
+    <div style={{
+      display: "flex", flexDirection: "column", gap: 24, textAlign: "center",
+      maxWidth: 900, alignItems: "center",
+      opacity: interpolate(p, [0, 1], [0, 1], { extrapolateRight: "clamp" }),
+      translate: `0px ${interpolate(p, [0, 1], [14, 0], { easing: EASE, extrapolateRight: "clamp" })}px`,
+    }}>
+      {visual === "bars" && <Bars p={p} />}
+      {visual === "counter" && <Counter17k p={p} />}
+      {visual === "granite0" && <GraniteBlocks p={p} row={0} />}
+      {visual === "granite1" && <GraniteBlocks p={p} row={1} />}
+      {visual === "tricolor" && <Tricolor p={p} />}
+      {visual !== "counter" && (
+        <div style={{
+          fontFamily: SERIF, fontWeight: 700, color, lineHeight: 1.05,
+          fontSize: idea.k.length > 22 ? 76 : idea.k.length > 14 ? 92 : 110,
+        }}>{idea.k}</div>
+      )}
+      {idea.s && (
+        <div style={{ fontFamily: SANS, fontSize: 34, color: C.faint, lineHeight: 1.4, maxWidth: 1100 }}>
+          {idea.s}
+        </div>
+      )}
+    </div>
+  );
+};
+
+const Hero: React.FC<{ cueIdx: number; local: number; cueFrom: number; sceneId: string; imgFrom: number }> = ({ cueIdx, local, cueFrom, sceneId, imgFrom }) => {
+  const idea = IDEAS[cueIdx] ?? { k: "", s: "" };
+  const hasImage = !idea.v;
   return (
     <div style={{
       position: "absolute", top: 330, left: 128, right: 128,
       display: "flex", alignItems: "center", justifyContent: "center",
       gap: 64,
-      opacity: interpolate(p, [0, 0.35], [0, 1], { extrapolateRight: "clamp" }),
-      translate: `0px ${interpolate(p, [0, 0.5], [28, 0], { easing: EASE, extrapolateRight: "clamp" })}px`,
     }}>
-      {hasImage && (
-        <Img
-          src={staticFile(`img/${sceneId}.jpg`)}
-          style={{
-            width: 620, height: 349, objectFit: "cover",
-            border: `4px solid ${C.ink}`,
-          }}
-        />
-      )}
-      <div style={{
-        display: "flex", flexDirection: "column", gap: 24, textAlign: "center",
-        maxWidth: hasImage ? 900 : 1500, alignItems: "center",
-      }}>
-        {visual === "bars" && <Bars p={p} />}
-        {visual === "counter" && <Counter17k p={p} />}
-        {visual === "granite0" && <GraniteBlocks p={p} row={0} />}
-        {visual === "granite1" && <GraniteBlocks p={p} row={1} />}
-        {visual === "tricolor" && <Tricolor p={p} />}
-        {visual !== "counter" && (
-          <div style={{
-            fontFamily: SERIF, fontWeight: 700, color, lineHeight: 1.05,
-            fontSize: idea.k.length > 22 ? 76 : idea.k.length > 14 ? 92 : 110,
-          }}>{idea.k}</div>
-        )}
-        {idea.s && (
-          <div style={{ fontFamily: SANS, fontSize: 34, color: C.faint, lineHeight: 1.4, maxWidth: 1100 }}>
-            {idea.s}
-          </div>
-        )}
-      </div>
+      {hasImage && <SceneImage local={local} sceneId={sceneId} imgFrom={imgFrom} />}
+      <IdeaText key={cueIdx} cueIdx={cueIdx} local={local} cueFrom={cueFrom} />
     </div>
   );
 };
@@ -293,7 +304,15 @@ export const Explainer: React.FC<z.infer<typeof explainerSchema>> = ({ captionsO
           <Kicker local={local} text={title.kicker} />
           <SceneTitle local={local} text={title.title} />
           <ChapterNav sceneIdx={sceneIdx} local={local} sceneDur={scene.dur} />
-          {current && <Hero cueIdx={current.i} local={local} cueFrom={current.c.from - scene.start} sceneId={scene.id} />}
+          {current && (
+            <Hero
+              cueIdx={current.i}
+              local={local}
+              cueFrom={current.c.from - scene.start}
+              sceneId={scene.id}
+              imgFrom={sceneCues.find(({ i }) => !IDEAS[i]?.v) ? (sceneCues.find(({ i }) => !IDEAS[i]?.v)!.c.from - scene.start) : 0}
+            />
+          )}
           <Trail items={trailItems} local={local} />
         </>
       )}
