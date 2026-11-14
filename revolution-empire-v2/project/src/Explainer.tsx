@@ -80,13 +80,73 @@ const Regimes: React.FC<{ p: number }> = ({ p }) => {
   );
 };
 
-const Counter17k: React.FC<{ p: number }> = ({ p }) => {
-  const n = Math.round(interpolate(p, [0.15, 0.85], [0, 17000], {
+const Orders: React.FC<{ p: number }> = ({ p }) => {
+  const orders = [
+    { label: "Clergé", w: 180 },
+    { label: "Noblesse", w: 240 },
+    { label: "Tiers état", w: 760 },
+  ];
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+      {orders.map((o, i) => (
+        <div key={o.label} style={{
+          display: "flex", alignItems: "center", gap: 22,
+          opacity: interpolate(p, [0.1 + i * 0.15, 0.35 + i * 0.15], [0, 1], { extrapolateRight: "clamp" }),
+          translate: `${interpolate(p, [0.1 + i * 0.15, 0.35 + i * 0.15], [-40, 0], { easing: EASE, extrapolateRight: "clamp" })}px 0px`,
+        }}>
+          <div style={{ width: o.w * interpolate(p, [0.1 + i * 0.15, 0.45 + i * 0.15], [0, 1], { extrapolateRight: "clamp" }), height: 42, background: i === 2 ? C.blue : C.ink }} />
+          <span style={{ fontFamily: SANS, fontSize: 28, fontWeight: 600, color: C.ink }}>{o.label}</span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const BigCounter: React.FC<{ p: number; to: number; label: string }> = ({ p, to, label }) => {
+  const n = Math.round(interpolate(p, [0.15, 0.85], [0, to], {
     easing: Easing.out(Easing.cubic), extrapolateRight: "clamp",
   })).toLocaleString("fr-FR");
   return (
-    <div style={{ fontFamily: SERIF, fontSize: 92, fontWeight: 700, color: C.red, letterSpacing: 4 }}>
-      {n} exécutions
+    <div style={{ display: "flex", flexDirection: "column", gap: 10, alignItems: "center" }}>
+      <div style={{ fontFamily: SERIF, fontSize: 96, fontWeight: 700, color: C.red, letterSpacing: 4 }}>{n}</div>
+      <div style={{ fontFamily: SANS, fontSize: 34, fontWeight: 600, color: C.ink }}>{label}</div>
+    </div>
+  );
+};
+
+const Vote: React.FC<{ p: number }> = ({ p }) => {
+  const pour = 0.62;
+  const w = interpolate(p, [0.15, 0.75], [0, 1], { easing: Easing.out(Easing.cubic), extrapolateRight: "clamp" });
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 14, width: 1100 }}>
+      <div style={{ display: "flex", height: 64, border: `4px solid ${C.ink}` }}>
+        <div style={{ width: `${pour * w * 100}%`, background: C.red }} />
+        <div style={{ width: `${(1 - pour) * w * 100}%`, background: C.paper }} />
+      </div>
+      <div style={{ display: "flex", justifyContent: "space-between", fontFamily: SANS, fontSize: 28, fontWeight: 600, color: C.ink }}>
+        <span style={{ color: C.red }}>La mort — courte majorité</span>
+        <span style={{ color: C.faint }}>Contre</span>
+      </div>
+    </div>
+  );
+};
+
+const Manon: React.FC<{ p: number }> = ({ p }) => {
+  const rows = [
+    "1754 — née Manon Philipon, éduquée par les Lumières",
+    "Salonnière des Girondins — Brissot, Robespierre",
+    "Plume : pensées politiques signées du couple",
+    "8 novembre 1793 — guillotinée",
+  ];
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 14, border: `4px solid ${C.ink}`, padding: "26px 34px", background: C.paper, maxWidth: 1200 }}>
+      {rows.map((r, i) => (
+        <div key={r} style={{
+          fontFamily: SANS, fontSize: 29, fontWeight: 600, color: i === 3 ? C.red : C.ink,
+          opacity: interpolate(p, [0.1 + i * 0.13, 0.35 + i * 0.13], [0, 1], { extrapolateRight: "clamp" }),
+          translate: `0px ${interpolate(p, [0.1 + i * 0.13, 0.35 + i * 0.13], [18, 0], { easing: EASE, extrapolateRight: "clamp" })}px`,
+        }}>{r}</div>
+      ))}
     </div>
   );
 };
@@ -169,12 +229,64 @@ const ChapterNav: React.FC<{ sceneIdx: number; local: number; sceneDur: number }
   );
 };
 
+// ---------- Chapter ghost year (visual signature per chapter) ----------
+const GhostYear: React.FC<{ local: number; year?: string }> = ({ local, year }) => {
+  if (!year) return null;
+  return (
+    <div style={{
+      position: "absolute", top: 400, left: 0, right: 0,
+      display: "flex", justifyContent: "center",
+      opacity: interpolate(local, [0.4, 1.4], [0, 0.16], { extrapolateRight: "clamp" }),
+      fontFamily: SERIF, fontSize: 520, fontWeight: 700, color: C.ink,
+      letterSpacing: 12, userSelect: "none",
+    }}>{year}</div>
+  );
+};
+
 // ---------- Hero (one idea = one animation) ----------
 const Hero: React.FC<{ cueIdx: number; local: number; cueFrom: number }> = ({ cueIdx, local, cueFrom }) => {
   const idea = IDEAS[cueIdx] ?? { k: "" };
   const p = clamp01((local - cueFrom) / 1.1);
   const color = colorOf(idea.c);
   const visual = idea.v;
+  const weight = idea.w;
+
+  if (weight === "epic") {
+    const fade = clamp01((local - cueFrom) / 1.6);
+    return (
+      <div style={{
+        position: "absolute", top: 330, left: 0, right: 0, bottom: 220,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        flexDirection: "column", gap: 34,
+        background: color,
+        scaleY: interpolate(fade, [0, 1], [0.6, 1], { easing: EASE }),
+        opacity: fade,
+      }}>
+        {visual === "counter" && (
+          <div style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "center" }}>
+            <div style={{ fontFamily: SERIF, fontSize: 120, fontWeight: 700, color: C.paper, letterSpacing: 4 }}>
+              {Math.round(interpolate(clamp01((local - cueFrom) / 2.2), [0.15, 0.85], [0, 17000], {
+                easing: Easing.out(Easing.cubic), extrapolateRight: "clamp",
+              })).toLocaleString("fr-FR")}
+            </div>
+            <div style={{ fontFamily: SANS, fontSize: 36, fontWeight: 600, color: C.paper }}>exécutions après procès</div>
+          </div>
+        )}
+        {visual !== "counter" && (
+          <div style={{
+            fontFamily: SERIF, fontWeight: 700, color: C.paper, lineHeight: 1.05, textAlign: "center",
+            fontSize: idea.k.length > 22 ? 96 : idea.k.length > 14 ? 118 : 140,
+          }}>{idea.k}</div>
+        )}
+        {idea.s && (
+          <div style={{ fontFamily: SANS, fontSize: 36, color: C.paper, lineHeight: 1.4, maxWidth: 1150, textAlign: "center", opacity: interpolate(fade, [0.4, 1], [0, 0.95], { extrapolateRight: "clamp" }) }}>
+            {idea.s}
+          </div>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div style={{
       position: "absolute", top: 330, left: 128, right: 128,
@@ -184,11 +296,16 @@ const Hero: React.FC<{ cueIdx: number; local: number; cueFrom: number }> = ({ cu
       translate: `0px ${interpolate(p, [0, 0.6], [24, 0], { easing: EASE, extrapolateRight: "clamp" })}px`,
     }}>
       {visual === "regimes" && <Regimes p={p} />}
-      {visual === "counter" && <Counter17k p={p} />}
+      {visual === "orders" && <Orders p={p} />}
+      {visual === "counter" && <BigCounter p={p} to={17000} label="exécutions après procès" />}
+      {visual === "counter700" && <BigCounter p={p} to={700000} label="soldats en 1812" />}
+      {visual === "counter130" && <BigCounter p={p} to={130} label="départements en 1811" />}
+      {visual === "vote" && <Vote p={p} />}
+      {visual === "manon" && <Manon p={p} />}
       {visual === "granite0" && <GraniteBlocks p={p} row={0} />}
       {visual === "granite1" && <GraniteBlocks p={p} row={1} />}
       {visual === "tricolor" && <Tricolor p={p} />}
-      {visual !== "counter" && (
+      {visual !== "counter" && visual !== "counter700" && visual !== "counter130" && (
         <div style={{
           fontFamily: SERIF, fontWeight: 700, color, lineHeight: 1.05, textAlign: "center",
           fontSize: idea.k.length > 22 ? 74 : idea.k.length > 14 ? 90 : 108,
@@ -198,6 +315,13 @@ const Hero: React.FC<{ cueIdx: number; local: number; cueFrom: number }> = ({ cu
         <div style={{ fontFamily: SANS, fontSize: 34, color: C.faint, lineHeight: 1.4, maxWidth: 1150, textAlign: "center" }}>
           {idea.s}
         </div>
+      )}
+      {weight === "key" && (
+        <div style={{
+          position: "absolute", top: -34, bottom: -34, left: -44, right: -44,
+          border: `4px solid ${C.rule}`, pointerEvents: "none",
+          opacity: interpolate(p, [0.2, 0.7], [0, 1], { extrapolateRight: "clamp" }),
+        }} />
       )}
     </div>
   );
@@ -274,6 +398,7 @@ export const Explainer: React.FC<z.infer<typeof explainerSchema>> = ({ captionsO
       <Audio src={staticFile("narration.wav")} />
       {!captionsOnly && (
         <>
+          <GhostYear local={local} year={title.year} />
           <Kicker local={local} text={title.kicker} />
           <SceneTitle local={local} text={title.title} />
           <ChapterNav sceneIdx={sceneIdx} local={local} sceneDur={scene.dur} />
@@ -286,16 +411,16 @@ export const Explainer: React.FC<z.infer<typeof explainerSchema>> = ({ captionsO
   );
 };
 
-const SCENE_TITLES: Record<string, { kicker: string; title: string }> = {
+const SCENE_TITLES: Record<string, { kicker: string; title: string; year?: string }> = {
   s0: { kicker: "Introduction", title: "Une nouvelle conception de la nation" },
-  s1: { kicker: "1789 — La fin de l'Ancien Régime", title: "La Nation affirme sa souveraineté" },
-  s2: { kicker: "1790 — Les réformes", title: "Réorganiser la France" },
-  s3: { kicker: "1791 — La Constitution", title: "Une monarchie constitutionnelle" },
-  s4: { kicker: "1791-1792 — Vers la rupture", title: "La Nation et son roi se brouillent" },
-  s5: { kicker: "1792-1793 — La Convention", title: "Une République divisée" },
-  s6: { kicker: "1793-1794 — La Terreur", title: "La République de la peur" },
-  s7: { kicker: "1795-1799 — Le Directoire", title: "Une république conservatrice" },
-  s8: { kicker: "1799-1804 — Consulat et Empire", title: "Napoléon Bonaparte" },
-  s9: { kicker: "1805-1811 — Le Grand Empire", title: "L'Europe conquise et transformée" },
-  s10: { kicker: "Bilan", title: "1789-1814, une rupture majeure" },
+  s1: { kicker: "1789 — La fin de l'Ancien Régime", title: "La Nation affirme sa souveraineté" , year: "1789" },
+  s2: { kicker: "1790 — Les réformes", title: "Réorganiser la France" , year: "1790" },
+  s3: { kicker: "1791 — La Constitution", title: "Une monarchie constitutionnelle" , year: "1791" },
+  s4: { kicker: "1791-1792 — Vers la rupture", title: "La Nation et son roi se brouillent" , year: "1792" },
+  s5: { kicker: "1792-1793 — La Convention", title: "Une République divisée" , year: "1793" },
+  s6: { kicker: "1793-1794 — La Terreur", title: "La République de la peur" , year: "1793" },
+  s7: { kicker: "1795-1799 — Le Directoire", title: "Une république conservatrice" , year: "1795" },
+  s8: { kicker: "1799-1804 — Consulat et Empire", title: "Napoléon Bonaparte" , year: "1804" },
+  s9: { kicker: "1805-1811 — Le Grand Empire", title: "L'Europe conquise et transformée" , year: "1811" },
+  s10: { kicker: "Bilan", title: "1789-1814, une rupture majeure" , year: "1814" },
 };
