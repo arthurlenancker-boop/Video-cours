@@ -1,0 +1,469 @@
+{
+ "cues": [
+  {
+   "from": 0.6,
+   "to": 7.0,
+   "lines": [
+    "La Révolution française et l'Empire : une nouvelle conception de la nation."
+   ]
+  },
+  {
+   "from": 7.15,
+   "to": 22.23,
+   "lines": [
+    "Pourquoi la période de dix-sept cent quatre-vingt-neuf à dix-huit cent quatorze est-elle considérée comme une rupture majeure ?"
+   ]
+  },
+  {
+   "from": 22.38,
+   "to": 27.46,
+   "lines": [
+    "Et comment les représentants de la Nation ont-ils cherché à construire un régime politique stable ?"
+   ]
+  },
+  {
+   "from": 27.61,
+   "to": 34.37,
+   "lines": [
+    "En vingt-cinq ans, la France expérimente quatre régimes : la monarchie constitutionnelle, la République, le Directoire, puis l'Empire."
+   ]
+  },
+  {
+   "from": 35.72,
+   "to": 43.78,
+   "lines": [
+    "En dix-sept cent quatre-vingt-neuf, le royaume est en faillite et la société d'ordres est ébranlée par les idées des Lumières."
+   ]
+  },
+  {
+   "from": 43.93,
+   "to": 50.58,
+   "lines": [
+    "Le tiers état se proclame Assemblée nationale : les représentants de la Nation réclament le pouvoir."
+   ]
+  },
+  {
+   "from": 50.73,
+   "to": 56.79,
+   "lines": [
+    "Le quatorze juillet, la prise de la Bastille symbolise la fin de la monarchie absolue."
+   ]
+  },
+  {
+   "from": 56.94,
+   "to": 60.64,
+   "lines": [
+    "Dans la nuit du quatre août, les privilèges sont abolis."
+   ]
+  },
+  {
+   "from": 60.79,
+   "to": 66.52,
+   "lines": [
+    "La Déclaration des droits de l'homme et du citoyen proclame que la Nation est souveraine."
+   ]
+  },
+  {
+   "from": 66.67,
+   "to": 72.93,
+   "lines": [
+    "C'est la fin de l'Ancien Régime : le pouvoir appartient désormais aux représentants de la Nation."
+   ]
+  },
+  {
+   "from": 74.28,
+   "to": 77.2,
+   "lines": [
+    "La France entreprend alors de grandes réformes."
+   ]
+  },
+  {
+   "from": 77.35,
+   "to": 83.09,
+   "lines": [
+    "Sur le plan administratif, quatre-vingt-quatre départements remplacent les anciennes provinces."
+   ]
+  },
+  {
+   "from": 83.24,
+   "to": 89.58,
+   "lines": [
+    "Sur le plan financier, les biens du clergé sont nationalisés pour rembourser les dettes de l'État."
+   ]
+  },
+  {
+   "from": 89.73,
+   "to": 97.19,
+   "lines": [
+    "La Constitution civile du clergé transforme les évêques et les prêtres en fonctionnaires, rémunérés par l'État."
+   ]
+  },
+  {
+   "from": 97.34,
+   "to": 106.77,
+   "lines": [
+    "Ils doivent prêter serment à la Constitution : le clergé se divise entre jureurs et réfractaires, et le pape condamne la réforme."
+   ]
+  },
+  {
+   "from": 108.12,
+   "to": 113.71,
+   "lines": [
+    "En dix-sept cent quatre-vingt-onze, la Constitution met en place une monarchie constitutionnelle."
+   ]
+  },
+  {
+   "from": 113.86,
+   "to": 120.76,
+   "lines": [
+    "Le suffrage est censitaire et masculin : seuls votent les hommes de plus de vingt-cinq ans payant suffisamment d'impôts."
+   ]
+  },
+  {
+   "from": 120.91,
+   "to": 127.08,
+   "lines": [
+    "Les pouvoirs sont séparés : le roi, roi des Français, détient le pouvoir exécutif, et l'Assemblée législative vote les lois."
+   ]
+  },
+  {
+   "from": 127.23,
+   "to": 130.05,
+   "lines": [
+    "Le roi conserve un droit de veto : il peut empêcher qu'une loi soit votée."
+   ]
+  },
+  {
+   "from": 130.2,
+   "to": 139.49,
+   "lines": [
+    "Seule une minorité du peuple détient donc la souveraineté nationale."
+   ]
+  },
+  {
+   "from": 140.84,
+   "to": 149.54,
+   "lines": [
+    "Le vingt et un juin dix-sept cent quatre-vingt-onze, la fuite du roi s'arrête à Varennes : Louis seize est arrêté et discrédité."
+   ]
+  },
+  {
+   "from": 149.69,
+   "to": 159.04,
+   "lines": [
+    "Le dix-sept juillet, la garde nationale tire sur la manifestation du Champ de Mars : la confiance entre la Nation et son roi est brisée."
+   ]
+  },
+  {
+   "from": 159.19,
+   "to": 167.54,
+   "lines": [
+    "Le vingt avril dix-sept cent quatre-vingt-douze, la France déclare la guerre à l'Autriche : c'est le début de vingt-trois ans de conflits."
+   ]
+  },
+  {
+   "from": 167.69,
+   "to": 173.83,
+   "lines": [
+    "Le duc de Brunswick menace de détruire Paris si les Parisiens ne se soumettent pas au roi."
+   ]
+  },
+  {
+   "from": 173.98,
+   "to": 180.16,
+   "lines": [
+    "Le dix août, les sans-culottes prennent le palais des Tuileries : la monarchie est renversée."
+   ]
+  },
+  {
+   "from": 180.31,
+   "to": 185.01,
+   "lines": [
+    "Le vingt-deux septembre, la Convention proclame la Première République."
+   ]
+  },
+  {
+   "from": 186.36,
+   "to": 189.84,
+   "lines": [
+    "La Convention, élue au suffrage universel masculin, est divisée en deux groupes."
+   ]
+  },
+  {
+   "from": 189.99,
+   "to": 193.87,
+   "lines": [
+    "Les Girondins, modérés, se méfient du peuple et des insurrections populaires."
+   ]
+  },
+  {
+   "from": 194.02,
+   "to": 198.88,
+   "lines": [
+    "Les Montagnards, soutenus par les sans-culottes, défendent une révolution sociale."
+   ]
+  },
+  {
+   "from": 199.03,
+   "to": 210.4,
+   "lines": [
+    "Après un procès, Louis seize est guillotiné le vingt et un janvier dix-sept cent quatre-vingt-treize, à une courte majorité."
+   ]
+  },
+  {
+   "from": 210.55,
+   "to": 218.85,
+   "lines": [
+    "Des femmes comme Manon Roland s'engagent en politique, mais elles restent exclues du pouvoir."
+   ]
+  },
+  {
+   "from": 220.2,
+   "to": 229.03,
+   "lines": [
+    "La mort du roi déclenche une coalition européenne à l'extérieur, et une guerre civile à l'intérieur, notamment en Vendée."
+   ]
+  },
+  {
+   "from": 229.18,
+   "to": 236.4,
+   "lines": [
+    "Face au danger, le Comité de salut public, dominé par Robespierre, concentre le pouvoir."
+   ]
+  },
+  {
+   "from": 236.55,
+   "to": 245.64,
+   "lines": [
+    "Les prix sont contrôlés, les réquisitions de grain organisées, et la levée en masse rend le service militaire obligatoire."
+   ]
+  },
+  {
+   "from": 245.79,
+   "to": 252.02,
+   "lines": [
+    "La loi des suspects, votée en septembre, entraîne des arrestations massives."
+   ]
+  },
+  {
+   "from": 252.17,
+   "to": 259.98,
+   "lines": [
+    "Dix-sept mille personnes sont exécutées après procès, et la répression en Vendée fait plus de cent mille morts."
+   ]
+  },
+  {
+   "from": 260.13,
+   "to": 269.17,
+   "lines": [
+    "Isolé, désigné comme un dictateur, Robespierre est renversé et exécuté en juillet dix-sept cent quatre-vingt-quatorze."
+   ]
+  },
+  {
+   "from": 270.52,
+   "to": 275.95,
+   "lines": [
+    "En dix-sept cent quatre-vingt-quinze, une nouvelle constitution met en place le Directoire."
+   ]
+  },
+  {
+   "from": 276.1,
+   "to": 285.28,
+   "lines": [
+    "Le suffrage redevient censitaire et le pouvoir exécutif est confié à cinq directeurs, pour éviter toute dictature personnelle."
+   ]
+  },
+  {
+   "from": 285.43,
+   "to": 293.97,
+   "lines": [
+    "Le régime favorise les élites et la bourgeoisie, tandis que les catégories populaires connaissent la misère : les tensions s'accentuent."
+   ]
+  },
+  {
+   "from": 294.12,
+   "to": 298.82,
+   "lines": [
+    "Instable, ce régime ne se maintient que grâce au soutien de l'armée."
+   ]
+  },
+  {
+   "from": 298.97,
+   "to": 308.29,
+   "lines": [
+    "Le neuf novembre dix-sept cent quatre-vingt-dix-neuf, le général Napoléon Bonaparte prend le pouvoir par un coup d'État : c'est le dix-huit Brumaire."
+   ]
+  },
+  {
+   "from": 309.64,
+   "to": 317.94,
+   "lines": [
+    "Bonaparte devient premier consul, puis se fait sacrer empereur à Notre-Dame de Paris, le deux décembre mille huit cent quatre."
+   ]
+  },
+  {
+   "from": 318.09,
+   "to": 326.85,
+   "lines": [
+    "Il se comporte comme un roi : noblesse d'Empire, assemblées sans pouvoir, censure de la presse et opposants arrêtés."
+   ]
+  },
+  {
+   "from": 327.0,
+   "to": 336.23,
+   "lines": [
+    "Pour asseoir son régime, il bâtit des masses de granit : Banque de France, lycées, Légion d'honneur, franc germinal."
+   ]
+  },
+  {
+   "from": 336.38,
+   "to": 343.45,
+   "lines": [
+    "Le Code civil de mille huit cent quatre établit des règles communes et proclame l'égalité des citoyens devant la loi."
+   ]
+  },
+  {
+   "from": 343.6,
+   "to": 350.74,
+   "lines": [
+    "Mais les femmes sont placées sous la tutelle de leur mari, et l'esclavage, aboli en dix-sept cent quatre-vingt-quatorze, est rétabli."
+   ]
+  },
+  {
+   "from": 350.89,
+   "to": 360.97,
+   "lines": [
+    "Le Concordat de mille huit cent un réconcilie la France avec le pape : le clergé prête serment de fidélité à l'État, qui le rémunère."
+   ]
+  },
+  {
+   "from": 361.12,
+   "to": 367.1,
+   "lines": [
+    "Des plébiscites, sorte de référendums, donnent un semblant de démocratie à ce régime autoritaire."
+   ]
+  },
+  {
+   "from": 368.45,
+   "to": 374.96,
+   "lines": [
+    "Grâce à la conscription, la Grande Armée compte jusqu'à sept cent mille soldats, français et étrangers."
+   ]
+  },
+  {
+   "from": 375.11,
+   "to": 381.75,
+   "lines": [
+    "Des victoires comme Ulm et Austerlitz permettent à Napoléon de dominer une grande partie de l'Europe."
+   ]
+  },
+  {
+   "from": 381.9,
+   "to": 390.25,
+   "lines": [
+    "En mille huit cent onze, le Grand Empire compte cent trente départements, de Hambourg à Rome, entouré d'états vassaux."
+   ]
+  },
+  {
+   "from": 390.4,
+   "to": 400.16,
+   "lines": [
+    "Napoléon exporte les principes de dix-sept cent quatre-vingt-neuf : suppression des privilèges, égalité devant la loi, Code civil."
+   ]
+  },
+  {
+   "from": 400.31,
+   "to": 406.78,
+   "lines": [
+    "Mais l'occupation suscite des contestations, et le blocus continental contre l'Angleterre échoue."
+   ]
+  },
+  {
+   "from": 408.13,
+   "to": 416.31,
+   "lines": [
+    "De dix-sept cent quatre-vingt-neuf à dix-huit cent quatorze, la Nation devient souveraine et les citoyens égaux devant la loi."
+   ]
+  },
+  {
+   "from": 416.46,
+   "to": 422.88,
+   "lines": [
+    "Mais la France a traversé quatre régimes instables, de la Terreur à l'Empire autoritaire."
+   ]
+  },
+  {
+   "from": 423.03,
+   "to": 428.69,
+   "lines": [
+    "Politiquement, la Révolution a échoué ; socialement, elle a tout transformé."
+   ]
+  },
+  {
+   "from": 428.84,
+   "to": 431.74,
+   "lines": [
+    "C'est la naissance de la France moderne."
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s0",
+   "start": 0.35,
+   "dur": 34.42
+  },
+  {
+   "id": "s1",
+   "start": 35.47,
+   "dur": 37.86
+  },
+  {
+   "id": "s2",
+   "start": 74.03,
+   "dur": 33.14
+  },
+  {
+   "id": "s3",
+   "start": 107.87,
+   "dur": 32.02
+  },
+  {
+   "id": "s4",
+   "start": 140.59,
+   "dur": 44.82
+  },
+  {
+   "id": "s5",
+   "start": 186.11,
+   "dur": 33.14
+  },
+  {
+   "id": "s6",
+   "start": 219.95,
+   "dur": 49.62
+  },
+  {
+   "id": "s7",
+   "start": 270.27,
+   "dur": 38.42
+  },
+  {
+   "id": "s8",
+   "start": 309.39,
+   "dur": 58.11
+  },
+  {
+   "id": "s9",
+   "start": 368.2,
+   "dur": 38.98
+  },
+  {
+   "id": "s10",
+   "start": 407.88,
+   "dur": 24.26
+  }
+ ],
+ "total": 433.29,
+ "fps": 30
+}
