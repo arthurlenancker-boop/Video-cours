@@ -14,3 +14,5 @@ Source : [« Comment créer des animations INCROYABLES avec l’IA » — Yassin
 6. **Itérer par corrections ciblées** — une valeur absolue à la fois (durée, position, taille) — et ne jamais re-générer aveuglément en espérant un meilleur résultat.
 7. **Animation par code privilégiée** (Remotion, déjà utilisé ici ; HyperFrames en alternative) pour tout contenu exact — texte, chiffres, charte graphique : rendu déterministe, frame-exact, modifiable élément par élément. Réserver la vidéo générative (type Higgsfield) aux plans d'illustration ou d'ambiance.
 8. **QA frame par frame** sur le master rendu, comparé au brief et au storyboard — une preview séduisante n'est pas un rendu fiable.
+
+Ces règles sont aussi embarquées dans un skill installable : `skills/video-cours-production/SKILL.md`.
