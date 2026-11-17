@@ -1,0 +1,33 @@
+[
+ {"id": 0, "scene": "s0", "text": "En histoire, en troisième, on te demande souvent de rédiger un développement construit. Concrètement, tu dois expliquer à Augustine un sujet, en quelques paragraphes entièrement rédigés."},
+ {"id": 1, "scene": "s0", "text": "Augustine ne connaît rien au chapitre. Tout ce qu'elle saura, c'est ce que tu vas lui écrire : des phrases complètes, qui se suivent dans un ordre logique."},
+ {"id": 2, "scene": "s0", "text": "La méthode tient en trois parties. Une introduction, un développement, puis une conclusion. Regarde-la en action, avec une vraie question du chapitre sur la Révolution."},
+
+ {"id": 3, "scene": "s1", "text": "Tout commence par la question de l'énoncé. Lis-la plusieurs fois, et souligne les mots importants. Notre question d'exemple : pourquoi la République est-elle proclamée en France en dix-sept cent quatre-vingt-douze ?"},
+ {"id": 4, "scene": "s1", "text": "Les mots clés sont : République, proclamée, dix-sept cent quatre-vingt-douze. Ces mots vont revenir trois fois. Dans l'introduction, dans le développement, et dans la conclusion."},
+ {"id": 5, "scene": "s1", "text": "Garde la question sous les yeux, du début à la fin. Elle est ton fil conducteur."},
+
+ {"id": 6, "scene": "s2", "text": "Première partie : l'introduction. Elle tient en trois phrases, pas une de plus. Première phrase, l'accroche : tu donnes le contexte, simplement, sans détails inutiles."},
+ {"id": 7, "scene": "s2", "text": "Par exemple : en dix-sept cent quatre-vingt-onze, la France est une monarchie constitutionnelle dirigée par Louis seize."},
+ {"id": 8, "scene": "s2", "text": "Deuxième phrase, la problématique : tu reprends simplement les mots de la question de l'énoncé. Par exemple : on se demande alors pourquoi la République est proclamée en dix-sept cent quatre-vingt-douze."},
+ {"id": 9, "scene": "s2", "text": "Troisième phrase, le plan, pour guider Augustine. Il sera tout d'abord question de la crise de la monarchie, puis de la guerre, et enfin de la journée du dix août."},
+ {"id": 10, "scene": "s2", "text": "Accroche, problématique, plan. Trois phrases, et Augustine sait déjà où tu l'emmènes."},
+
+ {"id": 11, "scene": "s3", "text": "Deuxième partie : le développement. C'est le cœur de ta copie, et il suit le plan annoncé. Un paragraphe pour chaque partie, avec les définitions du cours et des exemples précis."},
+ {"id": 12, "scene": "s3", "text": "Premier paragraphe : la crise de la monarchie. Définition du cours : une monarchie constitutionnelle est un royaume où le roi partage le pouvoir avec une assemblée élue."},
+ {"id": 13, "scene": "s3", "text": "Exemple : en juin dix-sept cent quatre-vingt-onze, Louis seize fuit et est arrêté à Varennes. La confiance est brisée. Autre définition : le veto permet au roi d'empêcher qu'une loi soit votée, et tout s'enlise."},
+ {"id": 14, "scene": "s3", "text": "Transition : la monarchie est discréditée, et la guerre va achever de l'affaiblir."},
+
+ {"id": 15, "scene": "s4", "text": "Deuxième paragraphe : la guerre. Définition du cours : la coalition est l'alliance des royaumes européens contre la France révolutionnaire. Exemple : en avril dix-sept cent quatre-vingt-douze, la France entre en guerre contre l'Autriche."},
+ {"id": 16, "scene": "s4", "text": "Autre exemple : le manifeste de Brunswick menace de détruire Paris. Le peuple s'inquiète, et se radicalise."},
+ {"id": 17, "scene": "s4", "text": "Troisième paragraphe : la journée du dix août. Exemple : le dix août dix-sept cent quatre-vingt-douze, les Parisiens prennent le palais des Tuileries, et la monarchie est renversée."},
+ {"id": 18, "scene": "s4", "text": "Définition du cours : une république est un régime où le pouvoir appartient au peuple, par des représentants élus. Exemple : le vingt-deux septembre dix-sept cent quatre-vingt-douze, la Convention proclame la République."},
+
+ {"id": 19, "scene": "s5", "text": "Troisième partie : la conclusion. Elle répond à la question, selon le plan et selon le développement. Tu reprends les mots de la question : la République est proclamée en dix-sept cent quatre-vingt-douze, pour trois raisons."},
+ {"id": 20, "scene": "s5", "text": "La monarchie est discréditée par Varennes, affaiblie par la guerre, puis renversée le dix août. Trois causes annoncées dans le plan, trois causes expliquées, trois causes résumées ici."},
+ {"id": 21, "scene": "s5", "text": "Et surtout : aucune information nouvelle dans la conclusion. Seulement ta réponse."},
+
+ {"id": 22, "scene": "s6", "text": "Récapitulons la méthode complète, pour toutes les questions d'histoire. L'introduction : l'accroche donne le contexte, la problématique reprend les mots de la question, le plan annonce tes parties."},
+ {"id": 23, "scene": "s6", "text": "Le développement : les définitions du cours et des exemples précis, dans l'ordre du plan. La conclusion : tu réponds à la question avec tes mots, sans rien ajouter de nouveau."},
+ {"id": 24, "scene": "s6", "text": "Explique à Augustine, rédige des phrases complètes, et garde toujours la question sous les yeux. À toi de jouer : prends une question du chapitre, et rédige ton premier développement construit."}
+]

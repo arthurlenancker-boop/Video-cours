@@ -1,0 +1,10 @@
+node_modules/
+out/
+tts/cue-*.wav
+tts/cue-*.mp3
+tts/timing.json
+tts/*.onnx
+tts/*.bin
+tts/block-*.wav
+out/
+.qa/
